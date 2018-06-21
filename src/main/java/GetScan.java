@@ -1,95 +1,54 @@
 import org.apache.hadoop.hbase.TableName;
 import org.apache.hadoop.hbase.client.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.util.Iterator;
+import java.util.Map;
+import java.util.NavigableMap;
 import java.util.Random;
 
 public class GetScan{
     private static Random random = new Random();
 
-    private static int countQueryEveryGroup = 10000;
+    private static int countQueryEveryGroup = 1;
     private static int numGroup = 1;
-    private static int countQuerySum = numGroup * countQueryEveryGroup;
+
+    private static Logger logger = LoggerFactory.getLogger(GetScan.class);
 
     public static void main(String[] args) {
 
-        try(Connection conn = ConnectionFactoryMy.createConnection()){
+        try(Connection connection = ConnectionFactoryMy.createConnection()){
             boolean withWrite = false;
-//            scanGet(conn, withWrite);
-
-            withWrite = true;
-            scanGet(conn, withWrite);
+            scanGet(connection, withWrite);
 
         }catch (Exception e){
 
         }
     }
 
-    public static void scanGet(Connection conn, boolean withWrite){
-        //第一次获取数据会耗时，我们先获取，保证后面对比的公平
-
-        HbaseMultiVersionGet(conn, Constants.TABLE_GETS[Constants.TABLE_NUM-1], true, true,true);
-
-        long[] sumScanNoLimit = new long[20];
-        long[] sumScanOneLimit = new long[20];
-        long[] sumGetOneLimit = new long[20];
-        long[] sumGetNoLimit = new long[20];
+    public static void scanGet(Connection connection, boolean withWrite){
 
         //随机读
-        boolean randomRead = true;
+        boolean randomRead = false;
 
         //限制一行
         boolean limitOne = false;
 
-        for(int j = 0; j < numGroup; j++){
-            System.out.println("group" + j);
-            for(int i = 0; i < Constants.TABLE_NUM; i++){
-                limitOne = false;
-                long timeScan = CustomMultiVersionScan(conn, Constants.TABLE_SCANS[i], randomRead, limitOne, withWrite);
-                sumScanNoLimit[i] += timeScan;
-            }
-            System.out.println("scan1");
+        long timeScan = CustomMultiVersionScan(connection, Constants.TABLE_SCANS[9], randomRead, limitOne, withWrite);
 
-            for(int i = 0; i < Constants.TABLE_NUM; i++){
-                limitOne = true;
-                long timeScan = CustomMultiVersionScan(conn, Constants.TABLE_SCANS[i], randomRead, limitOne, withWrite);
-                sumScanOneLimit[i] += timeScan;
-            }
-            System.out.println("scan2");
+        System.out.println(timeScan);
 
-            for(int i = 0; i < Constants.TABLE_NUM; i++){
-                limitOne = false;
-                long timeGet = HbaseMultiVersionGet(conn, Constants.TABLE_GETS[i], randomRead, limitOne, withWrite);
-                sumGetNoLimit[i] += timeGet;
-            }
-            System.out.println("get1");
-
-            for(int i = 0; i < Constants.TABLE_NUM; i++){
-                limitOne = true;
-                long timeGet = HbaseMultiVersionGet(conn, Constants.TABLE_GETS[i], randomRead, limitOne, withWrite);
-                sumGetOneLimit[i] += timeGet;
-            }
-            System.out.println("get2");
-
-        }
-
-        for(int i = 0; i < Constants.TABLE_NUM; i++){
-            System.out.print((double)sumScanNoLimit[i] / (countQuerySum) + " ");
-            System.out.print((double)sumScanOneLimit[i] / (countQuerySum) + " ");
-            System.out.print((double)sumGetNoLimit[i] / (countQuerySum) + " ");
-            System.out.print((double)sumGetOneLimit[i] / (countQuerySum) + " ");
-            System.out.println();
-        }
     }
 
-
-    public static long CustomMultiVersionScan(Connection conn, String tableNameStr, boolean randomReading, boolean limitOne, boolean withWrite) {
+    public static long CustomMultiVersionScan(Connection connection, String tableNameStr, boolean randomReading, boolean limitOne, boolean withWrite) {
 
         TableName tableName = TableName.valueOf(tableNameStr);
 
 //        自动关闭
         try{
-            Table tableCustomMultiVersion = conn.getTable(tableName);
+            Table tableCustomMultiVersion = connection.getTable(tableName);
 
             long timeStart = System.currentTimeMillis();
 
@@ -109,20 +68,43 @@ public class GetScan{
                 Scan scan = new Scan();
                 scan.withStartRow(startRow);
                 scan.withStopRow(stopRow);
+                scan.readAllVersions();
+
                 if(limitOne){
                     scan.setOneRowLimit();
                 }
 
                 if(withWrite){
-                    PutData.putCustomMultiVersion(conn, tableNameStr, Constants.VALUE_NUM, Constants.ID_NUM, 4);
+                    PutData.putCustomMultiVersion(connection, tableNameStr, Constants.VALUE_NUM, Constants.ID_NUM, 4);
                 }
 
                 ResultScanner resultScanner = tableCustomMultiVersion.getScanner(scan);
-                Iterator<Result> resultIterator = resultScanner.iterator();
+                Result result;
 
-                while (resultIterator.hasNext()){
-                    resultIterator.next();
+                while ( (result = resultScanner.next()) != null ){
+                    NavigableMap<byte[],NavigableMap<byte[],NavigableMap<Long,byte[]>>> map = result.getMap();
+
+                    //输出列族数量
+                    System.out.println(map.size());
+
+                    for (Map.Entry<byte[], NavigableMap<byte[],NavigableMap<Long,byte[]>>> entry: map.entrySet()) {
+                        String cf = new String(entry.getKey());
+                        NavigableMap<byte[],NavigableMap<Long,byte[]>> qualifiers= entry.getValue();
+
+                        for(Map.Entry<byte[],NavigableMap<Long,byte[]>> quafilier : qualifiers.entrySet()){
+                            String qualifierName = new String(quafilier.getKey());
+                            System.out.println(qualifierName);
+
+                            for(Map.Entry<Long, byte[]> timeValue : quafilier.getValue().entrySet()){
+                                long timestamp = timeValue.getKey();
+                                String value = new String(timeValue.getValue());
+                                logger.info("time:value={}:{}", timestamp, value);
+                            }
+                        }
+                    }
+
                 }
+
             }
 
             long timeEnd = System.currentTimeMillis();
@@ -138,13 +120,13 @@ public class GetScan{
         return 0;
     }
 
-    public static long HbaseMultiVersionGet(Connection conn, String tableNameStr, boolean randomReading, boolean limitOne, boolean withWrite){
+    public static long HbaseMultiVersionGet(Connection connection, String tableNameStr, boolean randomReading, boolean limitOne, boolean withWrite){
         TableName tableName = TableName.valueOf(tableNameStr);
 
         ResultScanner results = null;
 //        自动关闭
         try{
-            Table tableCustomMultiVersion = conn.getTable(tableName);
+            Table tableCustomMultiVersion = connection.getTable(tableName);
 
             long timeStart = System.currentTimeMillis();
 
@@ -167,7 +149,7 @@ public class GetScan{
                 }
 
                 if(withWrite){
-                    PutData.putCustomMultiVersion(conn, tableNameStr, Constants.VALUE_NUM, Constants.ID_NUM, 4);
+                    PutData.putCustomMultiVersion(connection, tableNameStr, Constants.VALUE_NUM, Constants.ID_NUM, 4);
                 }
 
                 tableCustomMultiVersion.get(get);
