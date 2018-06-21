@@ -40,6 +40,8 @@ public class GetScan{
 
         System.out.println(timeScan);
 
+        System.out.println(timeScan);
+
     }
 
     public static long CustomMultiVersionScan(Connection connection, String tableNameStr, boolean randomReading, boolean limitOne, boolean withWrite) {
