@@ -24,7 +24,7 @@ public class GetScan{
             scanGet(connection, withWrite);
 
         }catch (Exception e){
-
+            e.printStackTrace();
         }
     }
 
