@@ -49,4 +49,19 @@ public class Utils {
 
         System.out.println(getNextRowKeyOf16(125));
     }
+
+    public static void kill(String path){
+
+        try {
+            //获取执行权限
+            ProcessBuilder builder = new ProcessBuilder("/bin/chmod", "755", path);
+            Process process = builder.start();
+            process.waitFor();
+
+            Process ps = Runtime.getRuntime().exec(path);
+            ps.waitFor();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }

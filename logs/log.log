@@ -1,341 +1,283 @@
-2018-06-21 05:38:03  [ main:0 ] - [ DEBUG ]  setsid exited with exit code 0
-2018-06-21 05:38:03  [ main:28 ] - [ DEBUG ]   Creating new Groups object
-2018-06-21 05:38:03  [ main:67 ] - [ DEBUG ]  Trying to load the custom-built native-hadoop library...
-2018-06-21 05:38:03  [ main:68 ] - [ DEBUG ]  Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
-2018-06-21 05:38:03  [ main:68 ] - [ DEBUG ]  java.library.path=/usr/local/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
-2018-06-21 05:38:03  [ main:68 ] - [ WARN ]  Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2018-06-21 05:38:03  [ main:69 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
-2018-06-21 05:38:03  [ main:189 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
-2018-06-21 05:38:03  [ main:517 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, about=, always=false, type=DEFAULT, valueName=Time, value=[Rate of successful kerberos logins and latency (milliseconds)])
-2018-06-21 05:38:03  [ main:527 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, about=, always=false, type=DEFAULT, valueName=Time, value=[Rate of failed kerberos logins and latency (milliseconds)])
-2018-06-21 05:38:03  [ main:528 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, about=, always=false, type=DEFAULT, valueName=Time, value=[GetGroups])
-2018-06-21 05:38:03  [ main:529 ] - [ DEBUG ]  UgiMetrics, User and group related metrics
-2018-06-21 05:38:03  [ main:711 ] - [ DEBUG ]  hadoop login
-2018-06-21 05:38:03  [ main:713 ] - [ DEBUG ]  hadoop login commit
-2018-06-21 05:38:03  [ main:718 ] - [ DEBUG ]  using local user:UnixPrincipal: root
-2018-06-21 05:38:03  [ main:718 ] - [ DEBUG ]  Using user: "UnixPrincipal: root" with name root
-2018-06-21 05:38:03  [ main:720 ] - [ DEBUG ]  User entry: "root"
-2018-06-21 05:38:03  [ main:720 ] - [ DEBUG ]  Assuming keytab is managed externally since logged in from subject.
-2018-06-21 05:38:03  [ main:726 ] - [ DEBUG ]  UGI loginUser:root (auth:SIMPLE)
-2018-06-21 05:38:04  [ main:1346 ] - [ DEBUG ]  Using Log4J as the default logging framework
-2018-06-21 05:38:04  [ main:1354 ] - [ DEBUG ]  -Dorg.apache.hbase.thirdparty.io.netty.leakDetection.level: simple
-2018-06-21 05:38:04  [ main:1354 ] - [ DEBUG ]  -Dorg.apache.hbase.thirdparty.io.netty.leakDetection.targetRecords: 4
-2018-06-21 05:38:04  [ main:1391 ] - [ DEBUG ]  -Dio.netty.noUnsafe: false
-2018-06-21 05:38:04  [ main:1391 ] - [ DEBUG ]  Java version: 8
-2018-06-21 05:38:04  [ main:1398 ] - [ DEBUG ]  sun.misc.Unsafe.theUnsafe: available
-2018-06-21 05:38:04  [ main:1400 ] - [ DEBUG ]  sun.misc.Unsafe.copyMemory: available
-2018-06-21 05:38:04  [ main:1401 ] - [ DEBUG ]  java.nio.Buffer.address: available
-2018-06-21 05:38:04  [ main:1402 ] - [ DEBUG ]  direct buffer constructor: available
-2018-06-21 05:38:04  [ main:1403 ] - [ DEBUG ]  java.nio.Bits.unaligned: available, true
-2018-06-21 05:38:04  [ main:1403 ] - [ DEBUG ]  jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
-2018-06-21 05:38:04  [ main:1404 ] - [ DEBUG ]  java.nio.DirectByteBuffer.<init>(long, int): available
-2018-06-21 05:38:04  [ main:1405 ] - [ DEBUG ]  sun.misc.Unsafe: available
-2018-06-21 05:38:04  [ main:1406 ] - [ DEBUG ]  -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2018-06-21 05:38:04  [ main:1407 ] - [ DEBUG ]  -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2018-06-21 05:38:04  [ main:1408 ] - [ DEBUG ]  -Dio.netty.noPreferDirect: false
-2018-06-21 05:38:04  [ main:1408 ] - [ DEBUG ]  -Dio.netty.maxDirectMemory: 1854930944 bytes
-2018-06-21 05:38:04  [ main:1408 ] - [ DEBUG ]  -Dio.netty.uninitializedArrayAllocationThreshold: -1
-2018-06-21 05:38:04  [ main:1409 ] - [ DEBUG ]  java.nio.ByteBuffer.cleaner(): available
-2018-06-21 05:38:04  [ main:1410 ] - [ DEBUG ]  Loaded default ResourceLeakDetector: org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector@6a400542
-2018-06-21 05:38:04  [ main:1425 ] - [ DEBUG ]  org.jctools-core.MpscChunkedArrayQueue: available
-2018-06-21 05:38:04  [ main:1458 ] - [ DEBUG ]  -Dio.netty.eventLoopThreads: 8
-2018-06-21 05:38:04  [ main:1487 ] - [ DEBUG ]  -Dio.netty.noKeySetOptimization: false
-2018-06-21 05:38:04  [ main:1488 ] - [ DEBUG ]  -Dio.netty.selectorAutoRebuildThreshold: 512
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2042 ] - [ DEBUG ]  -Dorg.apache.hbase.thirdparty.io.netty.buffer.bytebuf.checkAccessible: true
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2043 ] - [ DEBUG ]  Loaded default ResourceLeakDetector: org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector@44234cff
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2079 ] - [ DEBUG ]  -Dio.netty.processId: 14762 (auto-detected)
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2081 ] - [ DEBUG ]  -Djava.net.preferIPv4Stack: false
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2082 ] - [ DEBUG ]  -Djava.net.preferIPv6Addresses: false
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2084 ] - [ DEBUG ]  Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2085 ] - [ DEBUG ]  /proc/sys/net/core/somaxconn: 128
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2086 ] - [ DEBUG ]  -Dio.netty.machineId: 00:0c:29:ff:fe:c1:26:a1 (auto-detected)
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2091 ] - [ DEBUG ]  -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2091 ] - [ DEBUG ]  -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2116 ] - [ DEBUG ]  -Dio.netty.allocator.numHeapArenas: 8
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2117 ] - [ DEBUG ]  -Dio.netty.allocator.numDirectArenas: 8
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2117 ] - [ DEBUG ]  -Dio.netty.allocator.pageSize: 8192
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2117 ] - [ DEBUG ]  -Dio.netty.allocator.maxOrder: 11
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2117 ] - [ DEBUG ]  -Dio.netty.allocator.chunkSize: 16777216
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2117 ] - [ DEBUG ]  -Dio.netty.allocator.tinyCacheSize: 512
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2118 ] - [ DEBUG ]  -Dio.netty.allocator.smallCacheSize: 256
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2118 ] - [ DEBUG ]  -Dio.netty.allocator.normalCacheSize: 64
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2118 ] - [ DEBUG ]  -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2118 ] - [ DEBUG ]  -Dio.netty.allocator.cacheTrimInterval: 8192
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2118 ] - [ DEBUG ]  -Dio.netty.allocator.useCacheForAllThreads: true
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2129 ] - [ DEBUG ]  -Dio.netty.allocator.type: pooled
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2129 ] - [ DEBUG ]  -Dio.netty.threadLocalDirectBufferSize: 65536
-2018-06-21 05:38:05  [ hconnection-0x6a6cb05c-metaLookup-shared--pool4-t1:2130 ] - [ DEBUG ]  -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2018-06-21 05:38:05  [ Default-IPC-NioEventLoopGroup-1-1:2316 ] - [ DEBUG ]  -Dio.netty.recycler.maxCapacityPerThread: 32768
-2018-06-21 05:38:05  [ Default-IPC-NioEventLoopGroup-1-1:2317 ] - [ DEBUG ]  -Dio.netty.recycler.maxSharedCapacityFactor: 2
-2018-06-21 05:38:05  [ Default-IPC-NioEventLoopGroup-1-1:2317 ] - [ DEBUG ]  -Dio.netty.recycler.linkCapacity: 16
-2018-06-21 05:38:05  [ Default-IPC-NioEventLoopGroup-1-1:2317 ] - [ DEBUG ]  -Dio.netty.recycler.ratio: 8
-2018-06-21 05:43:43  [ main:0 ] - [ DEBUG ]  setsid exited with exit code 0
-2018-06-21 05:43:43  [ main:31 ] - [ DEBUG ]   Creating new Groups object
-2018-06-21 05:43:43  [ main:56 ] - [ DEBUG ]  Trying to load the custom-built native-hadoop library...
-2018-06-21 05:43:43  [ main:57 ] - [ DEBUG ]  Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
-2018-06-21 05:43:43  [ main:57 ] - [ DEBUG ]  java.library.path=/usr/local/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
-2018-06-21 05:43:43  [ main:57 ] - [ WARN ]  Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2018-06-21 05:43:43  [ main:58 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
-2018-06-21 05:43:43  [ main:158 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
-2018-06-21 05:43:43  [ main:324 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, about=, always=false, type=DEFAULT, valueName=Time, value=[Rate of successful kerberos logins and latency (milliseconds)])
-2018-06-21 05:43:43  [ main:345 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, about=, always=false, type=DEFAULT, valueName=Time, value=[Rate of failed kerberos logins and latency (milliseconds)])
-2018-06-21 05:43:43  [ main:346 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, about=, always=false, type=DEFAULT, valueName=Time, value=[GetGroups])
-2018-06-21 05:43:43  [ main:348 ] - [ DEBUG ]  UgiMetrics, User and group related metrics
-2018-06-21 05:43:43  [ main:412 ] - [ DEBUG ]  hadoop login
-2018-06-21 05:43:43  [ main:413 ] - [ DEBUG ]  hadoop login commit
-2018-06-21 05:43:43  [ main:417 ] - [ DEBUG ]  using local user:UnixPrincipal: root
-2018-06-21 05:43:43  [ main:417 ] - [ DEBUG ]  Using user: "UnixPrincipal: root" with name root
-2018-06-21 05:43:43  [ main:419 ] - [ DEBUG ]  User entry: "root"
-2018-06-21 05:43:43  [ main:420 ] - [ DEBUG ]  Assuming keytab is managed externally since logged in from subject.
-2018-06-21 05:43:43  [ main:421 ] - [ DEBUG ]  UGI loginUser:root (auth:SIMPLE)
-2018-06-21 05:43:44  [ main:902 ] - [ DEBUG ]  Using Log4J as the default logging framework
-2018-06-21 05:43:44  [ main:912 ] - [ DEBUG ]  -Dorg.apache.hbase.thirdparty.io.netty.leakDetection.level: simple
-2018-06-21 05:43:44  [ main:913 ] - [ DEBUG ]  -Dorg.apache.hbase.thirdparty.io.netty.leakDetection.targetRecords: 4
-2018-06-21 05:43:44  [ main:953 ] - [ DEBUG ]  -Dio.netty.noUnsafe: false
-2018-06-21 05:43:44  [ main:954 ] - [ DEBUG ]  Java version: 8
-2018-06-21 05:43:44  [ main:955 ] - [ DEBUG ]  sun.misc.Unsafe.theUnsafe: available
-2018-06-21 05:43:44  [ main:956 ] - [ DEBUG ]  sun.misc.Unsafe.copyMemory: available
-2018-06-21 05:43:44  [ main:958 ] - [ DEBUG ]  java.nio.Buffer.address: available
-2018-06-21 05:43:44  [ main:958 ] - [ DEBUG ]  direct buffer constructor: available
-2018-06-21 05:43:44  [ main:959 ] - [ DEBUG ]  java.nio.Bits.unaligned: available, true
-2018-06-21 05:43:44  [ main:959 ] - [ DEBUG ]  jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
-2018-06-21 05:43:44  [ main:960 ] - [ DEBUG ]  java.nio.DirectByteBuffer.<init>(long, int): available
-2018-06-21 05:43:44  [ main:960 ] - [ DEBUG ]  sun.misc.Unsafe: available
-2018-06-21 05:43:44  [ main:960 ] - [ DEBUG ]  -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2018-06-21 05:43:44  [ main:960 ] - [ DEBUG ]  -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2018-06-21 05:43:44  [ main:964 ] - [ DEBUG ]  -Dio.netty.noPreferDirect: false
-2018-06-21 05:43:44  [ main:964 ] - [ DEBUG ]  -Dio.netty.maxDirectMemory: 1854930944 bytes
-2018-06-21 05:43:44  [ main:964 ] - [ DEBUG ]  -Dio.netty.uninitializedArrayAllocationThreshold: -1
-2018-06-21 05:43:44  [ main:965 ] - [ DEBUG ]  java.nio.ByteBuffer.cleaner(): available
-2018-06-21 05:43:44  [ main:965 ] - [ DEBUG ]  Loaded default ResourceLeakDetector: org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector@9353778
-2018-06-21 05:43:44  [ main:976 ] - [ DEBUG ]  org.jctools-core.MpscChunkedArrayQueue: available
-2018-06-21 05:43:44  [ main:1032 ] - [ DEBUG ]  -Dio.netty.eventLoopThreads: 8
-2018-06-21 05:43:44  [ main:1081 ] - [ DEBUG ]  -Dio.netty.noKeySetOptimization: false
-2018-06-21 05:43:44  [ main:1081 ] - [ DEBUG ]  -Dio.netty.selectorAutoRebuildThreshold: 512
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1721 ] - [ DEBUG ]  -Dorg.apache.hbase.thirdparty.io.netty.buffer.bytebuf.checkAccessible: true
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1722 ] - [ DEBUG ]  Loaded default ResourceLeakDetector: org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector@67d9a248
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1762 ] - [ DEBUG ]  -Dio.netty.processId: 15064 (auto-detected)
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1765 ] - [ DEBUG ]  -Djava.net.preferIPv4Stack: false
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1765 ] - [ DEBUG ]  -Djava.net.preferIPv6Addresses: false
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1766 ] - [ DEBUG ]  Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1767 ] - [ DEBUG ]  /proc/sys/net/core/somaxconn: 128
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1769 ] - [ DEBUG ]  -Dio.netty.machineId: 00:0c:29:ff:fe:c1:26:a1 (auto-detected)
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1776 ] - [ DEBUG ]  -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1776 ] - [ DEBUG ]  -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1798 ] - [ DEBUG ]  -Dio.netty.allocator.numHeapArenas: 8
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1798 ] - [ DEBUG ]  -Dio.netty.allocator.numDirectArenas: 8
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1799 ] - [ DEBUG ]  -Dio.netty.allocator.pageSize: 8192
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1799 ] - [ DEBUG ]  -Dio.netty.allocator.maxOrder: 11
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1799 ] - [ DEBUG ]  -Dio.netty.allocator.chunkSize: 16777216
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1799 ] - [ DEBUG ]  -Dio.netty.allocator.tinyCacheSize: 512
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1799 ] - [ DEBUG ]  -Dio.netty.allocator.smallCacheSize: 256
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1799 ] - [ DEBUG ]  -Dio.netty.allocator.normalCacheSize: 64
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1800 ] - [ DEBUG ]  -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1800 ] - [ DEBUG ]  -Dio.netty.allocator.cacheTrimInterval: 8192
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1800 ] - [ DEBUG ]  -Dio.netty.allocator.useCacheForAllThreads: true
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1809 ] - [ DEBUG ]  -Dio.netty.allocator.type: pooled
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1809 ] - [ DEBUG ]  -Dio.netty.threadLocalDirectBufferSize: 65536
-2018-06-21 05:43:45  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1809 ] - [ DEBUG ]  -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2018-06-21 05:43:45  [ Default-IPC-NioEventLoopGroup-1-1:1838 ] - [ DEBUG ]  -Dio.netty.recycler.maxCapacityPerThread: 32768
-2018-06-21 05:43:45  [ Default-IPC-NioEventLoopGroup-1-1:1838 ] - [ DEBUG ]  -Dio.netty.recycler.maxSharedCapacityFactor: 2
-2018-06-21 05:43:45  [ Default-IPC-NioEventLoopGroup-1-1:1838 ] - [ DEBUG ]  -Dio.netty.recycler.linkCapacity: 16
-2018-06-21 05:43:45  [ Default-IPC-NioEventLoopGroup-1-1:1839 ] - [ DEBUG ]  -Dio.netty.recycler.ratio: 8
-2018-06-21 05:44:59  [ main:0 ] - [ DEBUG ]  setsid exited with exit code 0
-2018-06-21 05:44:59  [ main:21 ] - [ DEBUG ]   Creating new Groups object
-2018-06-21 05:44:59  [ main:107 ] - [ DEBUG ]  Trying to load the custom-built native-hadoop library...
-2018-06-21 05:44:59  [ main:112 ] - [ DEBUG ]  Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
-2018-06-21 05:44:59  [ main:112 ] - [ DEBUG ]  java.library.path=/usr/local/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
-2018-06-21 05:44:59  [ main:113 ] - [ WARN ]  Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2018-06-21 05:44:59  [ main:114 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
-2018-06-21 05:44:59  [ main:323 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
-2018-06-21 05:44:59  [ main:481 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[Rate of successful kerberos logins and latency (milliseconds)])
-2018-06-21 05:44:59  [ main:502 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[Rate of failed kerberos logins and latency (milliseconds)])
-2018-06-21 05:44:59  [ main:502 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[GetGroups])
-2018-06-21 05:44:59  [ main:517 ] - [ DEBUG ]  UgiMetrics, User and group related metrics
-2018-06-21 05:44:59  [ main:697 ] - [ DEBUG ]  hadoop login
-2018-06-21 05:44:59  [ main:697 ] - [ DEBUG ]  hadoop login commit
-2018-06-21 05:44:59  [ main:704 ] - [ DEBUG ]  using local user:UnixPrincipal: root
-2018-06-21 05:44:59  [ main:704 ] - [ DEBUG ]  Using user: "UnixPrincipal: root" with name root
-2018-06-21 05:44:59  [ main:712 ] - [ DEBUG ]  User entry: "root"
-2018-06-21 05:44:59  [ main:713 ] - [ DEBUG ]  Assuming keytab is managed externally since logged in from subject.
-2018-06-21 05:44:59  [ main:714 ] - [ DEBUG ]  UGI loginUser:root (auth:SIMPLE)
-2018-06-21 05:45:00  [ main:1124 ] - [ DEBUG ]  Using Log4J as the default logging framework
-2018-06-21 05:45:00  [ main:1128 ] - [ DEBUG ]  -Dorg.apache.hbase.thirdparty.io.netty.leakDetection.level: simple
-2018-06-21 05:45:00  [ main:1129 ] - [ DEBUG ]  -Dorg.apache.hbase.thirdparty.io.netty.leakDetection.targetRecords: 4
-2018-06-21 05:45:00  [ main:1181 ] - [ DEBUG ]  -Dio.netty.noUnsafe: false
-2018-06-21 05:45:00  [ main:1183 ] - [ DEBUG ]  Java version: 8
-2018-06-21 05:45:00  [ main:1186 ] - [ DEBUG ]  sun.misc.Unsafe.theUnsafe: available
-2018-06-21 05:45:00  [ main:1187 ] - [ DEBUG ]  sun.misc.Unsafe.copyMemory: available
-2018-06-21 05:45:00  [ main:1189 ] - [ DEBUG ]  java.nio.Buffer.address: available
-2018-06-21 05:45:00  [ main:1207 ] - [ DEBUG ]  direct buffer constructor: available
-2018-06-21 05:45:00  [ main:1208 ] - [ DEBUG ]  java.nio.Bits.unaligned: available, true
-2018-06-21 05:45:00  [ main:1208 ] - [ DEBUG ]  jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
-2018-06-21 05:45:00  [ main:1210 ] - [ DEBUG ]  java.nio.DirectByteBuffer.<init>(long, int): available
-2018-06-21 05:45:00  [ main:1211 ] - [ DEBUG ]  sun.misc.Unsafe: available
-2018-06-21 05:45:00  [ main:1211 ] - [ DEBUG ]  -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2018-06-21 05:45:00  [ main:1211 ] - [ DEBUG ]  -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2018-06-21 05:45:00  [ main:1212 ] - [ DEBUG ]  -Dio.netty.noPreferDirect: false
-2018-06-21 05:45:00  [ main:1213 ] - [ DEBUG ]  -Dio.netty.maxDirectMemory: 1854930944 bytes
-2018-06-21 05:45:00  [ main:1213 ] - [ DEBUG ]  -Dio.netty.uninitializedArrayAllocationThreshold: -1
-2018-06-21 05:45:00  [ main:1213 ] - [ DEBUG ]  java.nio.ByteBuffer.cleaner(): available
-2018-06-21 05:45:00  [ main:1214 ] - [ DEBUG ]  Loaded default ResourceLeakDetector: org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector@9353778
-2018-06-21 05:45:00  [ main:1223 ] - [ DEBUG ]  org.jctools-core.MpscChunkedArrayQueue: available
-2018-06-21 05:45:00  [ main:1245 ] - [ DEBUG ]  -Dio.netty.eventLoopThreads: 8
-2018-06-21 05:45:00  [ main:1268 ] - [ DEBUG ]  -Dio.netty.noKeySetOptimization: false
-2018-06-21 05:45:00  [ main:1269 ] - [ DEBUG ]  -Dio.netty.selectorAutoRebuildThreshold: 512
-2018-06-21 05:45:00  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1873 ] - [ DEBUG ]  -Dorg.apache.hbase.thirdparty.io.netty.buffer.bytebuf.checkAccessible: true
-2018-06-21 05:45:00  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:1874 ] - [ DEBUG ]  Loaded default ResourceLeakDetector: org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector@686e714e
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2001 ] - [ DEBUG ]  -Dio.netty.processId: 15591 (auto-detected)
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2004 ] - [ DEBUG ]  -Djava.net.preferIPv4Stack: false
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2004 ] - [ DEBUG ]  -Djava.net.preferIPv6Addresses: false
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2016 ] - [ DEBUG ]  Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2018 ] - [ DEBUG ]  /proc/sys/net/core/somaxconn: 128
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2019 ] - [ DEBUG ]  -Dio.netty.machineId: 00:0c:29:ff:fe:c1:26:a1 (auto-detected)
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2033 ] - [ DEBUG ]  -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2040 ] - [ DEBUG ]  -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2122 ] - [ DEBUG ]  -Dio.netty.allocator.numHeapArenas: 8
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2123 ] - [ DEBUG ]  -Dio.netty.allocator.numDirectArenas: 8
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2125 ] - [ DEBUG ]  -Dio.netty.allocator.pageSize: 8192
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2125 ] - [ DEBUG ]  -Dio.netty.allocator.maxOrder: 11
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2126 ] - [ DEBUG ]  -Dio.netty.allocator.chunkSize: 16777216
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2126 ] - [ DEBUG ]  -Dio.netty.allocator.tinyCacheSize: 512
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2126 ] - [ DEBUG ]  -Dio.netty.allocator.smallCacheSize: 256
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2126 ] - [ DEBUG ]  -Dio.netty.allocator.normalCacheSize: 64
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2126 ] - [ DEBUG ]  -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2126 ] - [ DEBUG ]  -Dio.netty.allocator.cacheTrimInterval: 8192
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2126 ] - [ DEBUG ]  -Dio.netty.allocator.useCacheForAllThreads: true
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2172 ] - [ DEBUG ]  -Dio.netty.allocator.type: pooled
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2173 ] - [ DEBUG ]  -Dio.netty.threadLocalDirectBufferSize: 65536
-2018-06-21 05:45:01  [ hconnection-0x2d1ef81a-metaLookup-shared--pool4-t1:2173 ] - [ DEBUG ]  -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2018-06-21 05:45:01  [ Default-IPC-NioEventLoopGroup-1-1:2246 ] - [ DEBUG ]  -Dio.netty.recycler.maxCapacityPerThread: 32768
-2018-06-21 05:45:01  [ Default-IPC-NioEventLoopGroup-1-1:2247 ] - [ DEBUG ]  -Dio.netty.recycler.maxSharedCapacityFactor: 2
-2018-06-21 05:45:01  [ Default-IPC-NioEventLoopGroup-1-1:2248 ] - [ DEBUG ]  -Dio.netty.recycler.linkCapacity: 16
-2018-06-21 05:45:01  [ Default-IPC-NioEventLoopGroup-1-1:2248 ] - [ DEBUG ]  -Dio.netty.recycler.ratio: 8
-2018-06-21 05:47:08  [ main:0 ] - [ DEBUG ]  setsid exited with exit code 0
-2018-06-21 05:47:08  [ main:22 ] - [ DEBUG ]   Creating new Groups object
-2018-06-21 05:47:08  [ main:46 ] - [ DEBUG ]  Trying to load the custom-built native-hadoop library...
-2018-06-21 05:47:08  [ main:46 ] - [ DEBUG ]  Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
-2018-06-21 05:47:08  [ main:47 ] - [ DEBUG ]  java.library.path=/usr/local/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
-2018-06-21 05:47:08  [ main:47 ] - [ WARN ]  Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2018-06-21 05:47:08  [ main:47 ] - [ DEBUG ]  Falling back to shell based
-2018-06-21 05:47:08  [ main:48 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
-2018-06-21 05:47:08  [ main:151 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
-2018-06-21 05:47:08  [ main:318 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[Rate of successful kerberos logins and latency (milliseconds)])
-2018-06-21 05:47:08  [ main:329 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[Rate of failed kerberos logins and latency (milliseconds)])
-2018-06-21 05:47:08  [ main:330 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[GetGroups])
-2018-06-21 05:47:08  [ main:331 ] - [ DEBUG ]  UgiMetrics, User and group related metrics
-2018-06-21 05:47:08  [ main:379 ] - [ DEBUG ]  Kerberos krb5 configuration not found, setting default realm to empty
-2018-06-21 05:47:08  [ main:384 ] - [ DEBUG ]  hadoop login
-2018-06-21 05:47:08  [ main:385 ] - [ DEBUG ]  hadoop login commit
-2018-06-21 05:47:08  [ main:391 ] - [ DEBUG ]  using local user:UnixPrincipal: root
-2018-06-21 05:47:08  [ main:392 ] - [ DEBUG ]  Using user: "UnixPrincipal: root" with name root
-2018-06-21 05:47:08  [ main:394 ] - [ DEBUG ]  User entry: "root"
-2018-06-21 05:47:08  [ main:394 ] - [ DEBUG ]  Assuming keytab is managed externally since logged in from subject.
-2018-06-21 05:47:08  [ main:395 ] - [ DEBUG ]  UGI loginUser:root (auth:SIMPLE)
-2018-06-21 05:47:08  [ main:498 ] - [ INFO ]  Connect 0x06b19b79 to localhost:2181 with session timeout=90000ms, retries 30, retry interval 1000ms, keepAlive=60000ms
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:515 ] - [ INFO ]  Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:516 ] - [ INFO ]  Client environment:host.name=host1
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:516 ] - [ INFO ]  Client environment:java.version=1.8.0_171
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:517 ] - [ INFO ]  Client environment:java.vendor=Oracle Corporation
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:517 ] - [ INFO ]  Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:518 ] - [ INFO ]  Client environment:java.class.path=/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/icedtea-sound.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/java-atk-wrapper.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/management-agent.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar:/root/IdeaProjects/PerformanceTest/out/production/classes:/root/IdeaProjects/PerformanceTest/out/production/resources:/root/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.3.11/f6b34997d04c1538ce451d3955298f46fdb4dbd4/groovy-all-2.3.11.jar:/root/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.11.0/e6b751e02120c08702d98750f6a80bc25343b7f5/log4j-core-2.11.0.jar:/root/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.0/bede79a3f150711634a3047985517431bf6499f2/log4j-api-2.11.0.jar:/usr/local/hbase/lib/xz-1.0.jar:/usr/local/hbase/lib/asm-3.1.jar:/usr/local/hbase/lib/guice-3.0.jar:/usr/local/hbase/lib/avro-1.7.7.jar:/usr/local/hbase/lib/gson-2.2.4.jar:/usr/local/hbase/lib/junit-4.12.jar:/usr/local/hbase/lib/joni-2.1.11.jar:/usr/local/hbase/lib/jsch-0.1.54.jar:/usr/local/hbase/lib/xmlenc-0.52.jar:/usr/local/hbase/lib/guava-11.0.2.jar:/usr/local/hbase/lib/jets3t-0.9.0.jar:/usr/local/hbase/lib/jetty-6.1.26.jar:/usr/local/hbase/lib/log4j-1.2.17.jar:/usr/local/hbase/lib/paranamer-2.3.jar:/usr/local/hbase/lib/commons-io-2.5.jar:/usr/local/hbase/lib/hbase-it-2.0.0.jar:/usr/local/hbase/lib/httpcore-4.4.6.jar:/usr/local/hbase/lib/jettison-1.3.8.jar:/usr/local/hbase/lib/aopalliance-1.0.jar:/usr/local/hbase/lib/commons-cli-1.2.jar:/usr/local/hbase/lib/commons-net-3.1.jar:/usr/local/hbase/lib/disruptor-3.3.6.jar:/usr/local/hbase/lib/jaxb-api-2.2.12.jar:/usr/local/hbase/lib/jcodings-1.0.18.jar:/usr/local/hbase/lib/libthrift-0.9.3.jar:/usr/local/hbase/lib/commons-lang-2.6.jar:/usr/local/hbase/lib/hbase-http-2.0.0.jar:/usr/local/hbase/lib/hbase-rest-2.0.0.jar:/usr/local/hbase/lib/httpclient-4.5.3.jar:/usr/local/hbase/lib/jackson-xc-1.8.3.jar:/usr/local/hbase/lib/slf4j-api-1.7.25.jar:/usr/local/hbase/lib/zookeeper-3.4.10.jar:/usr/local/hbase/lib/commons-lang3-3.6.jar:/usr/local/hbase/lib/guice-servlet-3.0.jar:/usr/local/hbase/lib/hadoop-auth-2.7.4.jar:/usr/local/hbase/lib/hadoop-hdfs-2.7.4.jar:/usr/local/hbase/lib/hbase-shell-2.0.0.jar:/usr/local/hbase/lib/hk2-api-2.5.0-b32.jar:/usr/local/hbase/lib/jaxb-impl-2.2.3-1.jar:/usr/local/hbase/lib/jetty-util-6.1.26.jar:/usr/local/hbase/lib/snappy-java-1.0.5.jar:/usr/local/hbase/lib/api-util-1.0.0-M20.jar:/usr/local/hbase/lib/commons-codec-1.10.jar:/usr/local/hbase/lib/hbase-client-2.0.0.jar:/usr/local/hbase/lib/hbase-common-2.0.0.jar:/usr/local/hbase/lib/hbase-server-2.0.0.jar:/usr/local/hbase/lib/hbase-thrift-2.0.0.jar:/usr/local/hbase/lib/jackson-core-2.9.2.jar:/usr/local/hbase/lib/javax.el-3.0.1-b08.jar:/usr/local/hbase/lib/leveldbjni-all-1.8.jar:/usr/local/hbase/lib/metrics-core-3.2.1.jar:/usr/local/hbase/lib/commons-logging-1.2.jar:/usr/local/hbase/lib/commons-math3-3.6.1.jar:/usr/local/hbase/lib/hadoop-client-2.7.4.jar:/usr/local/hbase/lib/hadoop-common-2.7.4.jar:/usr/local/hbase/lib/hadoop-distcp-2.7.4.jar:/usr/local/hbase/lib/hbase-metrics-2.0.0.jar:/usr/local/hbase/lib/hbase-rsgroup-2.0.0.jar:/usr/local/hbase/lib/hk2-utils-2.5.0-b32.jar:/usr/local/hbase/lib/jackson-jaxrs-1.8.3.jar:/usr/local/hbase/lib/jamon-runtime-2.4.1.jar:/usr/local/hbase/lib/java-xmlbuilder-0.4.jar:/usr/local/hbase/lib/javassist-3.20.0-GA.jar:/usr/local/hbase/lib/jersey-guava-2.25.1.jar:/usr/local/hbase/lib/protobuf-java-2.5.0.jar:/usr/local/hbase/lib/spymemcached-2.12.2.jar:/usr/local/hbase/lib/commons-crypto-1.0.0.jar:/usr/local/hbase/lib/commons-digester-1.8.jar:/usr/local/hbase/lib/curator-client-4.0.0.jar:/usr/local/hbase/lib/hbase-endpoint-2.0.0.jar:/usr/local/hbase/lib/hbase-examples-2.0.0.jar:/usr/local/hbase/lib/hbase-it-2.0.0-tests.jar:/usr/local/hbase/lib/hbase-protocol-2.0.0.jar:/usr/local/hbase/lib/jersey-client-2.25.1.jar:/usr/local/hbase/lib/jersey-common-2.25.1.jar:/usr/local/hbase/lib/jersey-server-2.25.1.jar:/usr/local/hbase/lib/jetty-schemas-3.1.M0.jar:/usr/local/hbase/lib/slf4j-log4j12-1.7.25.jar:/usr/local/hbase/lib/commons-daemon-1.0.13.jar:/usr/local/hbase/lib/curator-recipes-4.0.0.jar:/usr/local/hbase/lib/hadoop-yarn-api-2.7.4.jar:/usr/local/hbase/lib/hbase-mapreduce-2.0.0.jar:/usr/local/hbase/lib/hbase-procedure-2.0.0.jar:/usr/local/hbase/lib/hbase-zookeeper-2.0.0.jar:/usr/local/hbase/lib/hk2-locator-2.5.0-b32.jar:/usr/local/hbase/lib/javax.ws.rs-api-2.0.1.jar:/usr/local/hbase/lib/api-asn1-api-1.0.0-M20.jar:/usr/local/hbase/lib/commons-compress-1.4.1.jar:/usr/local/hbase/lib/commons-httpclient-3.1.jar:/usr/local/hbase/lib/jackson-databind-2.9.2.jar:/usr/local/hbase/lib/javax.inject-2.5.0-b32.jar:/usr/local/hbase/lib/jetty-sslengine-6.1.26.jar:/usr/local/hbase/lib/netty-all-4.0.23.Final.jar:/usr/local/hbase/lib/apacheds-i18n-2.0.0-M15.jar:/usr/local/hbase/lib/curator-framework-4.0.0.jar:/usr/local/hbase/lib/hadoop-hdfs-2.7.4-tests.jar:/usr/local/hbase/lib/hbase-annotations-2.0.0.jar:/usr/local/hbase/lib/hbase-metrics-api-2.0.0.jar:/usr/local/hbase/lib/hbase-replication-2.0.0.jar:/usr/local/hbase/lib/jackson-core-asl-1.9.13.jar:/usr/local/hbase/lib/javax.servlet-api-3.1.0.jar:/usr/local/hbase/lib/javax.servlet.jsp-2.3.2.jar:/usr/local/hbase/lib/hadoop-annotations-2.7.4.jar:/usr/local/hbase/lib/hadoop-minicluster-2.7.4.jar:/usr/local/hbase/lib/hadoop-yarn-client-2.7.4.jar:/usr/local/hbase/lib/hadoop-yarn-common-2.7.4.jar:/usr/local/hbase/lib/hbase-common-2.0.0-tests.jar:/usr/local/hbase/lib/hbase-server-2.0.0-tests.jar:/usr/local/hbase/lib/hbase-shaded-netty-2.1.0.jar:/usr/local/hbase/lib/hbase-testing-util-2.0.0.jar:/usr/local/hbase/lib/jackson-jaxrs-base-2.9.2.jar:/usr/local/hbase/lib/javax.annotation-api-1.2.jar:/usr/local/hbase/lib/jersey-media-jaxb-2.25.1.jar:/usr/local/hbase/lib/commons-collections-3.2.2.jar:/usr/local/hbase/lib/commons-configuration-1.6.jar:/usr/local/hbase/lib/hadoop-common-2.7.4-tests.jar:/usr/local/hbase/lib/hbase-hadoop-compat-2.0.0.jar:/usr/local/hbase/lib/hbase-rsgroup-2.0.0-tests.jar:/usr/local/hbase/lib/jackson-annotations-2.9.0.jar:/usr/local/hbase/lib/jackson-mapper-asl-1.9.13.jar:/usr/local/hbase/lib/jetty-io-9.3.19.v20170502.jar:/usr/local/hbase/lib/audience-annotations-0.5.0.jar:/usr/local/hbase/lib/hbase-hadoop2-compat-2.0.0.jar:/usr/local/hbase/lib/jetty-jmx-9.3.19.v20170502.jar:/usr/local/hbase/lib/jetty-jsp-9.2.19.v20160908.jar:/usr/local/hbase/lib/jetty-xml-9.3.19.v20170502.jar:/usr/local/hbase/lib/validation-api-1.1.0.Final.jar:/usr/local/hbase/lib/hbase-mapreduce-2.0.0-tests.jar:/usr/local/hbase/lib/hbase-protocol-shaded-2.0.0.jar:/usr/local/hbase/lib/hbase-resource-bundle-2.0.0.jar:/usr/local/hbase/lib/hbase-shaded-protobuf-2.1.0.jar:/usr/local/hbase/lib/hbase-zookeeper-2.0.0-tests.jar:/usr/local/hbase/lib/javax.servlet.jsp-api-2.3.1.jar:/usr/local/hbase/lib/jetty-http-9.3.19.v20170502.jar:/usr/local/hbase/lib/jetty-util-9.3.19.v20170502.jar:/usr/local/hbase/lib/osgi-resource-locator-1.0.1.jar:/usr/local/hbase/lib/commons-beanutils-core-1.8.0.jar:/usr/local/hbase/lib/findbugs-annotations-1.3.9-1.jar:/usr/local/hbase/lib/htrace-core-3.2.0-incubating.jar:/usr/local/hbase/lib/javax.servlet.jsp.jstl-1.2.2.jar:/usr/local/hbase/lib/hbase-annotations-2.0.0-tests.jar:/usr/local/hbase/lib/htrace-core4-4.2.0-incubating.jar:/usr/local/hbase/lib/jetty-server-9.3.19.v20170502.jar:/usr/local/hbase/lib/jetty-webapp-9.3.19.v20170502.jar:/usr/local/hbase/lib/jetty-servlet-9.3.19.v20170502.jar:/usr/local/hbase/lib/hadoop-yarn-server-common-2.7.4.jar:/usr/local/hbase/lib/hbase-external-blockcache-2.0.0.jar:/usr/local/hbase/lib/hbase-hadoop-compat-2.0.0-tests.jar:/usr/local/hbase/lib/jetty-security-9.3.19.v20170502.jar:/usr/local/hbase/lib/aopalliance-repackaged-2.5.0-b32.jar:/usr/local/hbase/lib/hadoop-mapreduce-client-hs-2.7.4.jar:/usr/local/hbase/lib/hbase-hadoop2-compat-2.0.0-tests.jar:/usr/local/hbase/lib/hbase-shaded-miscellaneous-2.1.0.jar:/usr/local/hbase/lib/jetty-util-ajax-9.3.19.v20170502.jar:/usr/local/hbase/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/local/hbase/lib/hadoop-mapreduce-client-app-2.7.4.jar:/usr/local/hbase/lib/jackson-jaxrs-json-provider-2.9.2.jar:/usr/local/hbase/lib/hadoop-mapreduce-client-core-2.7.4.jar:/usr/local/hbase/lib/hadoop-yarn-server-web-proxy-2.7.4.jar:/usr/local/hbase/lib/hadoop-mapreduce-client-common-2.7.4.jar:/usr/local/hbase/lib/hadoop-yarn-server-nodemanager-2.7.4.jar:/usr/local/hbase/lib/hadoop-yarn-server-tests-2.7.4-tests.jar:/usr/local/hbase/lib/jersey-container-servlet-core-2.25.1.jar:/usr/local/hbase/lib/org.eclipse.jdt.core-3.8.2.v20130121.jar:/usr/local/hbase/lib/hadoop-mapreduce-client-shuffle-2.7.4.jar:/usr/local/hbase/lib/jackson-module-jaxb-annotations-2.9.2.jar:/usr/local/hbase/lib/hadoop-mapreduce-client-jobclient-2.7.4.jar:/usr/local/hbase/lib/hadoop-yarn-server-resourcemanager-2.7.4.jar:/usr/local/hbase/lib/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar:/usr/local/hbase/lib/hadoop-yarn-server-applicationhistoryservice-2.7.4.jar:/usr/local/idea/lib/idea_rt.jar
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:518 ] - [ INFO ]  Client environment:java.library.path=/usr/local/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:518 ] - [ INFO ]  Client environment:java.io.tmpdir=/tmp
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:518 ] - [ INFO ]  Client environment:java.compiler=<NA>
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:519 ] - [ INFO ]  Client environment:os.name=Linux
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:519 ] - [ INFO ]  Client environment:os.arch=amd64
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:519 ] - [ INFO ]  Client environment:os.version=4.15.0-23-generic
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:519 ] - [ INFO ]  Client environment:user.name=root
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:519 ] - [ INFO ]  Client environment:user.home=/root
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:519 ] - [ INFO ]  Client environment:user.dir=/root/IdeaProjects/PerformanceTest
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:540 ] - [ INFO ]  Initiating client connection, connectString=localhost:2181 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$12/1504557237@2589094e
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:542 ] - [ DEBUG ]  zookeeper.disableAutoWatchReset is false
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79-SendThread(localhost:2181):598 ] - [ INFO ]  Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79-SendThread(localhost:2181):606 ] - [ INFO ]  Socket connection established to localhost/127.0.0.1:2181, initiating session
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79-SendThread(localhost:2181):607 ] - [ DEBUG ]  Session establishment request sent on localhost/127.0.0.1:2181
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79-SendThread(localhost:2181):624 ] - [ INFO ]  Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x164219463df000b, negotiated timeout = 90000
-2018-06-21 05:47:08  [ ReadOnlyZKClient-localhost:2181@0x06b19b79-SendThread(localhost:2181):637 ] - [ DEBUG ]  Reading reply sessionid:0x164219463df000b, packet:: clientPath:/hbase/hbaseid serverPath:/hbase/hbaseid finished:false header:: 1,4  replyHeader:: 1,3305,0  request:: '/hbase/hbaseid,F  response:: #ffffffff000146d61737465723a3136303030fffffff5ffffffb3ffffff85ffffffe9fffffff6ffffffb6ffffffb2ffffff8150425546a2435646665363538662d393365382d343361352d393264642d356334376334623466613332,s{14,3159,1528174366261,1529571752476,13,0,0,0,67,0,14} 
-2018-06-21 05:47:08  [ main:736 ] - [ DEBUG ]  Using SLF4J as the default logging framework
-2018-06-21 05:47:08  [ main:741 ] - [ DEBUG ]  -Dorg.apache.hbase.thirdparty.io.netty.leakDetection.level: simple
-2018-06-21 05:47:08  [ main:741 ] - [ DEBUG ]  -Dorg.apache.hbase.thirdparty.io.netty.leakDetection.targetRecords: 4
-2018-06-21 05:47:09  [ main:812 ] - [ DEBUG ]  -Dio.netty.noUnsafe: false
-2018-06-21 05:47:09  [ main:813 ] - [ DEBUG ]  Java version: 8
-2018-06-21 05:47:09  [ main:815 ] - [ DEBUG ]  sun.misc.Unsafe.theUnsafe: available
-2018-06-21 05:47:09  [ main:817 ] - [ DEBUG ]  sun.misc.Unsafe.copyMemory: available
-2018-06-21 05:47:09  [ main:818 ] - [ DEBUG ]  java.nio.Buffer.address: available
-2018-06-21 05:47:09  [ main:818 ] - [ DEBUG ]  direct buffer constructor: available
-2018-06-21 05:47:09  [ main:819 ] - [ DEBUG ]  java.nio.Bits.unaligned: available, true
-2018-06-21 05:47:09  [ main:820 ] - [ DEBUG ]  jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
-2018-06-21 05:47:09  [ main:820 ] - [ DEBUG ]  java.nio.DirectByteBuffer.<init>(long, int): available
-2018-06-21 05:47:09  [ main:820 ] - [ DEBUG ]  sun.misc.Unsafe: available
-2018-06-21 05:47:09  [ main:821 ] - [ DEBUG ]  -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
-2018-06-21 05:47:09  [ main:822 ] - [ DEBUG ]  -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2018-06-21 05:47:09  [ main:824 ] - [ DEBUG ]  -Dio.netty.noPreferDirect: false
-2018-06-21 05:47:09  [ main:825 ] - [ DEBUG ]  -Dio.netty.maxDirectMemory: 1854930944 bytes
-2018-06-21 05:47:09  [ main:825 ] - [ DEBUG ]  -Dio.netty.uninitializedArrayAllocationThreshold: -1
-2018-06-21 05:47:09  [ main:826 ] - [ DEBUG ]  java.nio.ByteBuffer.cleaner(): available
-2018-06-21 05:47:09  [ main:826 ] - [ DEBUG ]  Loaded default ResourceLeakDetector: org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector@67a20f67
-2018-06-21 05:47:09  [ main:838 ] - [ DEBUG ]  org.jctools-core.MpscChunkedArrayQueue: available
-2018-06-21 05:47:09  [ main:855 ] - [ DEBUG ]  Using Unsafe to estimate memory layout
-2018-06-21 05:47:09  [ main:866 ] - [ DEBUG ]  Codec=org.apache.hadoop.hbase.codec.KeyValueCodec@5b239d7d, compressor=null, tcpKeepAlive=true, tcpNoDelay=true, connectTO=10000, readTO=20000, writeTO=60000, minIdleTimeBeforeClose=120000, maxRetries=0, fallbackAllowed=false, bind address=null
-2018-06-21 05:47:09  [ main:874 ] - [ DEBUG ]  -Dio.netty.eventLoopThreads: 8
-2018-06-21 05:47:09  [ main:903 ] - [ DEBUG ]  -Dio.netty.noKeySetOptimization: false
-2018-06-21 05:47:09  [ main:903 ] - [ DEBUG ]  -Dio.netty.selectorAutoRebuildThreshold: 512
-2018-06-21 05:47:09  [ ReadOnlyZKClient-localhost:2181@0x06b19b79-SendThread(localhost:2181):957 ] - [ DEBUG ]  Reading reply sessionid:0x164219463df000b, packet:: clientPath:/hbase/meta-region-server serverPath:/hbase/meta-region-server finished:false header:: 2,4  replyHeader:: 2,3305,0  request:: '/hbase/meta-region-server,F  response:: #ffffffff000146d61737465723a313630303020ffffff9128ffffff87ffffff84ffffffceffffffcc050425546a11a5686f73743110ffffff947d18ffffffa4ffffffdbffffffd1ffffff8cffffffc22c100183,s{44,3172,1528174371698,1529571769317,27,0,0,0,52,0,44} 
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1412 ] - [ DEBUG ]  -Dorg.apache.hbase.thirdparty.io.netty.buffer.bytebuf.checkAccessible: true
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1413 ] - [ DEBUG ]  Loaded default ResourceLeakDetector: org.apache.hbase.thirdparty.io.netty.util.ResourceLeakDetector@24881b84
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1447 ] - [ DEBUG ]  -Dio.netty.processId: 15796 (auto-detected)
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1449 ] - [ DEBUG ]  -Djava.net.preferIPv4Stack: false
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1449 ] - [ DEBUG ]  -Djava.net.preferIPv6Addresses: false
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1450 ] - [ DEBUG ]  Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1451 ] - [ DEBUG ]  /proc/sys/net/core/somaxconn: 128
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1453 ] - [ DEBUG ]  -Dio.netty.machineId: 00:0c:29:ff:fe:c1:26:a1 (auto-detected)
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1458 ] - [ DEBUG ]  -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1458 ] - [ DEBUG ]  -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1478 ] - [ DEBUG ]  -Dio.netty.allocator.numHeapArenas: 8
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1478 ] - [ DEBUG ]  -Dio.netty.allocator.numDirectArenas: 8
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1479 ] - [ DEBUG ]  -Dio.netty.allocator.pageSize: 8192
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1479 ] - [ DEBUG ]  -Dio.netty.allocator.maxOrder: 11
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1479 ] - [ DEBUG ]  -Dio.netty.allocator.chunkSize: 16777216
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1479 ] - [ DEBUG ]  -Dio.netty.allocator.tinyCacheSize: 512
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1479 ] - [ DEBUG ]  -Dio.netty.allocator.smallCacheSize: 256
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1479 ] - [ DEBUG ]  -Dio.netty.allocator.normalCacheSize: 64
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1480 ] - [ DEBUG ]  -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1480 ] - [ DEBUG ]  -Dio.netty.allocator.cacheTrimInterval: 8192
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1480 ] - [ DEBUG ]  -Dio.netty.allocator.useCacheForAllThreads: true
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1490 ] - [ DEBUG ]  -Dio.netty.allocator.type: pooled
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1490 ] - [ DEBUG ]  -Dio.netty.threadLocalDirectBufferSize: 65536
-2018-06-21 05:47:09  [ hconnection-0x34e9fd99-metaLookup-shared--pool4-t1:1490 ] - [ DEBUG ]  -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2018-06-21 05:47:09  [ Default-IPC-NioEventLoopGroup-1-1:1513 ] - [ DEBUG ]  -Dio.netty.recycler.maxCapacityPerThread: 32768
-2018-06-21 05:47:09  [ Default-IPC-NioEventLoopGroup-1-1:1513 ] - [ DEBUG ]  -Dio.netty.recycler.maxSharedCapacityFactor: 2
-2018-06-21 05:47:09  [ Default-IPC-NioEventLoopGroup-1-1:1514 ] - [ DEBUG ]  -Dio.netty.recycler.linkCapacity: 16
-2018-06-21 05:47:09  [ Default-IPC-NioEventLoopGroup-1-1:1514 ] - [ DEBUG ]  -Dio.netty.recycler.ratio: 8
-2018-06-21 05:47:09  [ main:1715 ] - [ INFO ]  time:value=1528262217078:value
-2018-06-21 05:47:09  [ main:1715 ] - [ INFO ]  time:value=1528262217078:value
-2018-06-21 05:47:09  [ main:1715 ] - [ INFO ]  time:value=1528262229730:value
-2018-06-21 05:47:09  [ main:1715 ] - [ INFO ]  time:value=1528262229730:value
-2018-06-21 05:47:09  [ main:1716 ] - [ INFO ]  time:value=1528262244311:value
-2018-06-21 05:47:09  [ main:1716 ] - [ INFO ]  time:value=1528262244311:value
-2018-06-21 05:47:09  [ main:1716 ] - [ INFO ]  time:value=1528262260365:value
-2018-06-21 05:47:09  [ main:1716 ] - [ INFO ]  time:value=1528262260365:value
-2018-06-21 05:47:09  [ main:1716 ] - [ INFO ]  time:value=1528262275431:value
-2018-06-21 05:47:09  [ main:1716 ] - [ INFO ]  time:value=1528262275431:value
-2018-06-21 05:47:09  [ main:1716 ] - [ INFO ]  time:value=1528262294816:value
-2018-06-21 05:47:09  [ main:1717 ] - [ INFO ]  time:value=1528262294816:value
-2018-06-21 05:47:09  [ main:1717 ] - [ INFO ]  time:value=1528262311396:value
-2018-06-21 05:47:09  [ main:1717 ] - [ INFO ]  time:value=1528262311396:value
-2018-06-21 05:47:09  [ main:1717 ] - [ INFO ]  time:value=1528262325278:value
-2018-06-21 05:47:09  [ main:1717 ] - [ INFO ]  time:value=1528262325278:value
-2018-06-21 05:47:09  [ main:1717 ] - [ INFO ]  time:value=1528262339502:value
-2018-06-21 05:47:09  [ main:1717 ] - [ INFO ]  time:value=1528262339502:value
-2018-06-21 05:47:09  [ main:1718 ] - [ INFO ]  time:value=1528262354995:value
-2018-06-21 05:47:09  [ main:1718 ] - [ INFO ]  time:value=1528262354995:value
-2018-06-21 05:47:09  [ main:1718 ] - [ INFO ]  Close zookeeper connection 0x06b19b79 to localhost:2181
-2018-06-21 05:47:09  [ main:1719 ] - [ DEBUG ]  Stopping rpc client
-2018-06-21 05:47:09  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:1719 ] - [ DEBUG ]  Closing session: 0x164219463df000b
-2018-06-21 05:47:09  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:1719 ] - [ DEBUG ]  Closing client for session: 0x164219463df000b
-2018-06-21 05:47:09  [ ReadOnlyZKClient-localhost:2181@0x06b19b79-SendThread(localhost:2181):1726 ] - [ DEBUG ]  Reading reply sessionid:0x164219463df000b, packet:: clientPath:null serverPath:null finished:false header:: 3,-11  replyHeader:: 3,3306,0  request:: null response:: null
-2018-06-21 05:47:09  [ ReadOnlyZKClient-localhost:2181@0x06b19b79-SendThread(localhost:2181):1726 ] - [ DEBUG ]  An exception was thrown while closing send thread for session 0x164219463df000b : Unable to read additional data from server sessionid 0x164219463df000b, likely server has closed socket
-2018-06-21 05:47:09  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:1727 ] - [ DEBUG ]  Disconnecting client for session: 0x164219463df000b
-2018-06-21 05:47:09  [ ReadOnlyZKClient-localhost:2181@0x06b19b79:1727 ] - [ INFO ]  Session: 0x164219463df000b closed
-2018-06-21 05:47:09  [ ReadOnlyZKClient-localhost:2181@0x06b19b79-EventThread:1729 ] - [ INFO ]  EventThread shut down for session: 0x164219463df000b
+2018-06-22 01:13:56  [ main:0 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[Rate of successful kerberos logins and latency (milliseconds)])
+2018-06-22 01:13:56  [ main:26 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[Rate of failed kerberos logins and latency (milliseconds)])
+2018-06-22 01:13:56  [ main:27 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[GetGroups])
+2018-06-22 01:13:56  [ main:29 ] - [ DEBUG ]  UgiMetrics, User and group related metrics
+2018-06-22 01:13:56  [ main:267 ] - [ DEBUG ]  Kerberos krb5 configuration not found, setting default realm to empty
+2018-06-22 01:13:56  [ main:275 ] - [ DEBUG ]   Creating new Groups object
+2018-06-22 01:13:56  [ main:296 ] - [ DEBUG ]  Trying to load the custom-built native-hadoop library...
+2018-06-22 01:13:56  [ main:318 ] - [ DEBUG ]  Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+2018-06-22 01:13:56  [ main:318 ] - [ DEBUG ]  java.library.path=/usr/local/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2018-06-22 01:13:56  [ main:318 ] - [ WARN ]  Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-06-22 01:13:56  [ main:321 ] - [ DEBUG ]  Falling back to shell based
+2018-06-22 01:13:56  [ main:323 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+2018-06-22 01:13:57  [ main:603 ] - [ DEBUG ]  setsid exited with exit code 0
+2018-06-22 01:13:57  [ main:603 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+2018-06-22 01:13:57  [ main:610 ] - [ DEBUG ]  hadoop login
+2018-06-22 01:13:57  [ main:611 ] - [ DEBUG ]  hadoop login commit
+2018-06-22 01:13:57  [ main:619 ] - [ DEBUG ]  using local user:UnixPrincipal: root
+2018-06-22 01:13:57  [ main:627 ] - [ DEBUG ]  UGI loginUser:root (auth:SIMPLE)
+2018-06-22 01:13:57  [ main:968 ] - [ INFO ]  Process identifier=hconnection-0x3b94d659 connecting to ZooKeeper ensemble=localhost:2181
+2018-06-22 01:13:57  [ main:985 ] - [ INFO ]  Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2018-06-22 01:13:57  [ main:985 ] - [ INFO ]  Client environment:host.name=host1
+2018-06-22 01:13:57  [ main:985 ] - [ INFO ]  Client environment:java.version=1.8.0_171
+2018-06-22 01:13:57  [ main:985 ] - [ INFO ]  Client environment:java.vendor=Oracle Corporation
+2018-06-22 01:13:57  [ main:986 ] - [ INFO ]  Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+2018-06-22 01:13:57  [ main:986 ] - [ INFO ]  Client environment:java.class.path=/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/icedtea-sound.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/java-atk-wrapper.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/management-agent.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar:/root/IdeaProjects/PerformanceTest/out/production/classes:/root/IdeaProjects/PerformanceTest/out/production/resources:/root/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.3.11/f6b34997d04c1538ce451d3955298f46fdb4dbd4/groovy-all-2.3.11.jar:/root/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.11.0/e6b751e02120c08702d98750f6a80bc25343b7f5/log4j-core-2.11.0.jar:/root/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.0/bede79a3f150711634a3047985517431bf6499f2/log4j-api-2.11.0.jar:/usr/local/hbase-1.1/lib/xz-1.0.jar:/usr/local/hbase-1.1/lib/asm-3.1.jar:/usr/local/hbase-1.1/lib/guice-3.0.jar:/usr/local/hbase-1.1/lib/avro-1.7.4.jar:/usr/local/hbase-1.1/lib/joni-2.1.2.jar:/usr/local/hbase-1.1/lib/junit-4.11.jar:/usr/local/hbase-1.1/lib/jsch-0.1.42.jar:/usr/local/hbase-1.1/lib/xmlenc-0.52.jar:/usr/local/hbase-1.1/lib/guava-12.0.1.jar:/usr/local/hbase-1.1/lib/jets3t-0.9.0.jar:/usr/local/hbase-1.1/lib/jetty-6.1.26.jar:/usr/local/hbase-1.1/lib/jsr305-1.3.9.jar:/usr/local/hbase-1.1/lib/log4j-1.2.17.jar:/usr/local/hbase-1.1/lib/paranamer-2.3.jar:/usr/local/hbase-1.1/lib/activation-1.1.jar:/usr/local/hbase-1.1/lib/commons-el-1.0.jar:/usr/local/hbase-1.1/lib/commons-io-2.4.jar:/usr/local/hbase-1.1/lib/hbase-it-1.1.2.jar:/usr/local/hbase-1.1/lib/httpcore-4.1.3.jar:/usr/local/hbase-1.1/lib/javax.inject-1.jar:/usr/local/hbase-1.1/lib/jaxb-api-2.2.2.jar:/usr/local/hbase-1.1/lib/jcodings-1.0.8.jar:/usr/local/hbase-1.1/lib/jettison-1.3.3.jar:/usr/local/hbase-1.1/lib/jsp-2.1-6.1.14.jar:/usr/local/hbase-1.1/lib/aopalliance-1.0.jar:/usr/local/hbase-1.1/lib/commons-cli-1.2.jar:/usr/local/hbase-1.1/lib/commons-net-3.1.jar:/usr/local/hbase-1.1/lib/disruptor-3.3.0.jar:/usr/local/hbase-1.1/lib/jersey-core-1.9.jar:/usr/local/hbase-1.1/lib/jersey-json-1.9.jar:/usr/local/hbase-1.1/lib/libthrift-0.9.0.jar:/usr/local/hbase-1.1/lib/servlet-api-2.5.jar:/usr/local/hbase-1.1/lib/slf4j-api-1.7.7.jar:/usr/local/hbase-1.1/lib/zookeeper-3.4.6.jar:/usr/local/hbase-1.1/lib/commons-lang-2.6.jar:/usr/local/hbase-1.1/lib/commons-math-2.2.jar:/usr/local/hbase-1.1/lib/hbase-rest-1.1.2.jar:/usr/local/hbase-1.1/lib/httpclient-4.2.5.jar:/usr/local/hbase-1.1/lib/jersey-guice-1.9.jar:/usr/local/hbase-1.1/lib/commons-codec-1.9.jar:/usr/local/hbase-1.1/lib/guice-servlet-3.0.jar:/usr/local/hbase-1.1/lib/hadoop-auth-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-hdfs-2.5.1.jar:/usr/local/hbase-1.1/lib/hbase-shell-1.1.2.jar:/usr/local/hbase-1.1/lib/jackson-xc-1.9.13.jar:/usr/local/hbase-1.1/lib/jaxb-impl-2.2.3-1.jar:/usr/local/hbase-1.1/lib/jersey-client-1.9.jar:/usr/local/hbase-1.1/lib/jersey-server-1.9.jar:/usr/local/hbase-1.1/lib/jetty-util-6.1.26.jar:/usr/local/hbase-1.1/lib/netty-3.2.4.Final.jar:/usr/local/hbase-1.1/lib/api-util-1.0.0-M20.jar:/usr/local/hbase-1.1/lib/hbase-client-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-common-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-server-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-thrift-1.1.2.jar:/usr/local/hbase-1.1/lib/jsp-api-2.1-6.1.14.jar:/usr/local/hbase-1.1/lib/leveldbjni-all-1.8.jar:/usr/local/hbase-1.1/lib/metrics-core-2.2.0.jar:/usr/local/hbase-1.1/lib/commons-logging-1.2.jar:/usr/local/hbase-1.1/lib/commons-math3-3.1.1.jar:/usr/local/hbase-1.1/lib/hadoop-client-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-common-2.5.1.jar:/usr/local/hbase-1.1/lib/jamon-runtime-2.3.1.jar:/usr/local/hbase-1.1/lib/java-xmlbuilder-0.4.jar:/usr/local/hbase-1.1/lib/protobuf-java-2.5.0.jar:/usr/local/hbase-1.1/lib/slf4j-log4j12-1.7.5.jar:/usr/local/hbase-1.1/lib/snappy-java-1.0.4.1.jar:/usr/local/hbase-1.1/lib/spymemcached-2.11.6.jar:/usr/local/hbase-1.1/lib/commons-digester-1.8.jar:/usr/local/hbase-1.1/lib/hbase-examples-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-it-1.1.2-tests.jar:/usr/local/hbase-1.1/lib/hbase-protocol-1.1.2.jar:/usr/local/hbase-1.1/lib/jackson-jaxrs-1.9.13.jar:/usr/local/hbase-1.1/lib/jruby-complete-1.6.8.jar:/usr/local/hbase-1.1/lib/commons-daemon-1.0.13.jar:/usr/local/hbase-1.1/lib/hadoop-yarn-api-2.5.1.jar:/usr/local/hbase-1.1/lib/hbase-procedure-1.1.2.jar:/usr/local/hbase-1.1/lib/jasper-runtime-5.5.23.jar:/usr/local/hbase-1.1/lib/api-asn1-api-1.0.0-M20.jar:/usr/local/hbase-1.1/lib/commons-compress-1.4.1.jar:/usr/local/hbase-1.1/lib/commons-httpclient-3.1.jar:/usr/local/hbase-1.1/lib/jasper-compiler-5.5.23.jar:/usr/local/hbase-1.1/lib/jetty-sslengine-6.1.26.jar:/usr/local/hbase-1.1/lib/netty-all-4.0.23.Final.jar:/usr/local/hbase-1.1/lib/servlet-api-2.5-6.1.14.jar:/usr/local/hbase-1.1/lib/apacheds-i18n-2.0.0-M15.jar:/usr/local/hbase-1.1/lib/commons-beanutils-1.7.0.jar:/usr/local/hbase-1.1/lib/hbase-annotations-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-prefix-tree-1.1.2.jar:/usr/local/hbase-1.1/lib/jackson-core-asl-1.9.13.jar:/usr/local/hbase-1.1/lib/hadoop-annotations-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-yarn-client-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-yarn-common-2.5.1.jar:/usr/local/hbase-1.1/lib/hbase-common-1.1.2-tests.jar:/usr/local/hbase-1.1/lib/hbase-server-1.1.2-tests.jar:/usr/local/hbase-1.1/lib/commons-collections-3.2.1.jar:/usr/local/hbase-1.1/lib/commons-configuration-1.6.jar:/usr/local/hbase-1.1/lib/hbase-hadoop-compat-1.1.2.jar:/usr/local/hbase-1.1/lib/jackson-mapper-asl-1.9.13.jar:/usr/local/hbase-1.1/lib/hbase-hadoop2-compat-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-resource-bundle-1.1.2.jar:/usr/local/hbase-1.1/lib/commons-beanutils-core-1.8.0.jar:/usr/local/hbase-1.1/lib/findbugs-annotations-1.3.9-1.jar:/usr/local/hbase-1.1/lib/htrace-core-3.1.0-incubating.jar:/usr/local/hbase-1.1/lib/hbase-annotations-1.1.2-tests.jar:/usr/local/hbase-1.1/lib/hadoop-yarn-server-common-2.5.1.jar:/usr/local/hbase-1.1/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-app-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-core-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-common-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-shuffle-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-jobclient-2.5.1.jar:/usr/local/idea/lib/idea_rt.jar
+2018-06-22 01:13:57  [ main:987 ] - [ INFO ]  Client environment:java.library.path=/usr/local/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2018-06-22 01:13:57  [ main:988 ] - [ INFO ]  Client environment:java.io.tmpdir=/tmp
+2018-06-22 01:13:57  [ main:990 ] - [ INFO ]  Client environment:java.compiler=<NA>
+2018-06-22 01:13:57  [ main:990 ] - [ INFO ]  Client environment:os.name=Linux
+2018-06-22 01:13:57  [ main:990 ] - [ INFO ]  Client environment:os.arch=amd64
+2018-06-22 01:13:57  [ main:990 ] - [ INFO ]  Client environment:os.version=4.15.0-23-generic
+2018-06-22 01:13:57  [ main:990 ] - [ INFO ]  Client environment:user.name=root
+2018-06-22 01:13:57  [ main:993 ] - [ INFO ]  Client environment:user.home=/root
+2018-06-22 01:13:57  [ main:993 ] - [ INFO ]  Client environment:user.dir=/root/IdeaProjects/PerformanceTest
+2018-06-22 01:13:57  [ main:994 ] - [ INFO ]  Initiating client connection, connectString=localhost:2181 sessionTimeout=90000 watcher=hconnection-0x3b94d6590x0, quorum=localhost:2181, baseZNode=/hbase
+2018-06-22 01:13:57  [ main:1005 ] - [ DEBUG ]  zookeeper.disableAutoWatchReset is false
+2018-06-22 01:13:57  [ main-SendThread(localhost:2181):1034 ] - [ INFO ]  Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-06-22 01:13:57  [ main-SendThread(localhost:2181):1065 ] - [ INFO ]  Socket connection established to localhost/127.0.0.1:2181, initiating session
+2018-06-22 01:13:57  [ main-SendThread(localhost:2181):1080 ] - [ DEBUG ]  Session establishment request sent on localhost/127.0.0.1:2181
+2018-06-22 01:13:57  [ main-SendThread(localhost:2181):1095 ] - [ INFO ]  Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x164265e57630013, negotiated timeout = 90000
+2018-06-22 01:13:57  [ main-EventThread:1101 ] - [ DEBUG ]  hconnection-0x3b94d6590x0, quorum=localhost:2181, baseZNode=/hbase Received ZooKeeper Event, type=None, state=SyncConnected, path=null
+2018-06-22 01:13:57  [ main-EventThread:1103 ] - [ DEBUG ]  hconnection-0x3b94d659-0x164265e57630013 connected
+2018-06-22 01:13:57  [ main-SendThread(localhost:2181):1112 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630013, packet:: clientPath:null serverPath:null finished:false header:: 1,3  replyHeader:: 1,461,0  request:: '/hbase/hbaseid,F  response:: s{17,333,1529648298952,1529652077656,2,0,0,0,67,0,17} 
+2018-06-22 01:13:57  [ main-SendThread(localhost:2181):1117 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630013, packet:: clientPath:null serverPath:null finished:false header:: 2,4  replyHeader:: 2,461,0  request:: '/hbase/hbaseid,F  response:: #ffffffff000146d61737465723a3136303030ffffffa36e5bffffff92ffffffc03b7cffffff8250425546a2461366133663831612d656636622d343234382d383864632d366465663236353532333566,s{17,333,1529648298952,1529652077656,2,0,0,0,67,0,17} 
+2018-06-22 01:13:58  [ main:1669 ] - [ DEBUG ]  Codec=org.apache.hadoop.hbase.codec.KeyValueCodec@1b1473ab, compressor=null, tcpKeepAlive=true, tcpNoDelay=true, connectTO=10000, readTO=20000, writeTO=60000, minIdleTimeBeforeClose=120000, maxRetries=0, fallbackAllowed=false, bind address=null
+2018-06-22 01:13:58  [ main-SendThread(localhost:2181):1821 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630013, packet:: clientPath:null serverPath:null finished:false header:: 3,8  replyHeader:: 3,461,0  request:: '/hbase,F  response:: v{'replication,'meta-region-server,'rs,'splitWAL,'backup-masters,'table-lock,'flush-table-proc,'region-in-transition,'online-snapshot,'master,'running,'recovering-regions,'draining,'namespace,'hbaseid,'table} 
+2018-06-22 01:13:58  [ main-SendThread(localhost:2181):1826 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630013, packet:: clientPath:null serverPath:null finished:false header:: 4,4  replyHeader:: 4,461,0  request:: '/hbase/meta-region-server,F  response:: #ffffffff0001a726567696f6e7365727665723a31363032335e76fffffffbffffffb0ffffffc03747150425546a11a5686f73743110ffffff977d18fffffff6ffffff85ffffff96ffffffb3ffffffc22c100183,s{399,399,1529652575432,1529652575432,0,0,0,0,58,0,399} 
+2018-06-22 01:13:58  [ hconnection-0x3b94d659-metaLookup-shared--pool2-t1:2143 ] - [ DEBUG ]  Use SIMPLE authentication for service ClientService, sasl=false
+2018-06-22 01:13:58  [ hconnection-0x3b94d659-metaLookup-shared--pool2-t1:2164 ] - [ DEBUG ]  Connecting to host1/192.168.137.129:16023
+2018-06-22 01:13:59  [ hconnection-0x3b94d659-shared--pool1-t1:2480 ] - [ DEBUG ]  Use SIMPLE authentication for service ClientService, sasl=false
+2018-06-22 01:13:59  [ hconnection-0x3b94d659-shared--pool1-t1:2484 ] - [ DEBUG ]  Connecting to host1/192.168.137.129:16020
+2018-06-22 01:14:00  [ main:4090 ] - [ INFO ]  Closing zookeeper sessionid=0x164265e57630013
+2018-06-22 01:14:00  [ main:4091 ] - [ DEBUG ]  Closing session: 0x164265e57630013
+2018-06-22 01:14:00  [ main:4091 ] - [ DEBUG ]  Closing client for session: 0x164265e57630013
+2018-06-22 01:14:00  [ main-SendThread(localhost:2181):4092 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630013, packet:: clientPath:null serverPath:null finished:false header:: 5,-11  replyHeader:: 5,462,0  request:: null response:: null
+2018-06-22 01:14:00  [ main:4093 ] - [ DEBUG ]  Disconnecting client for session: 0x164265e57630013
+2018-06-22 01:14:00  [ main:4093 ] - [ INFO ]  Session: 0x164265e57630013 closed
+2018-06-22 01:14:00  [ main-SendThread(localhost:2181):4093 ] - [ DEBUG ]  An exception was thrown while closing send thread for session 0x164265e57630013 : Unable to read additional data from server sessionid 0x164265e57630013, likely server has closed socket
+2018-06-22 01:14:00  [ main:4093 ] - [ DEBUG ]  Stopping rpc client
+2018-06-22 01:14:00  [ main-EventThread:4094 ] - [ INFO ]  EventThread shut down
+2018-06-22 01:14:44  [ main:0 ] - [ DEBUG ]  setsid exited with exit code 0
+2018-06-22 01:14:44  [ main:252 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[Rate of successful kerberos logins and latency (milliseconds)])
+2018-06-22 01:14:44  [ main:262 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[Rate of failed kerberos logins and latency (milliseconds)])
+2018-06-22 01:14:44  [ main:263 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[GetGroups])
+2018-06-22 01:14:44  [ main:264 ] - [ DEBUG ]  UgiMetrics, User and group related metrics
+2018-06-22 01:14:45  [ main:350 ] - [ DEBUG ]  Kerberos krb5 configuration not found, setting default realm to empty
+2018-06-22 01:14:45  [ main:358 ] - [ DEBUG ]   Creating new Groups object
+2018-06-22 01:14:45  [ main:360 ] - [ DEBUG ]  Trying to load the custom-built native-hadoop library...
+2018-06-22 01:14:45  [ main:361 ] - [ DEBUG ]  Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+2018-06-22 01:14:45  [ main:362 ] - [ DEBUG ]  java.library.path=/usr/local/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2018-06-22 01:14:45  [ main:362 ] - [ WARN ]  Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-06-22 01:14:45  [ main:362 ] - [ DEBUG ]  Falling back to shell based
+2018-06-22 01:14:45  [ main:362 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+2018-06-22 01:14:45  [ main:375 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+2018-06-22 01:14:45  [ main:383 ] - [ DEBUG ]  hadoop login
+2018-06-22 01:14:45  [ main:386 ] - [ DEBUG ]  hadoop login commit
+2018-06-22 01:14:45  [ main:395 ] - [ DEBUG ]  using local user:UnixPrincipal: root
+2018-06-22 01:14:45  [ main:397 ] - [ DEBUG ]  UGI loginUser:root (auth:SIMPLE)
+2018-06-22 01:14:45  [ main:653 ] - [ INFO ]  Process identifier=hconnection-0x57f23557 connecting to ZooKeeper ensemble=localhost:2181
+2018-06-22 01:14:45  [ main:662 ] - [ INFO ]  Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2018-06-22 01:14:45  [ main:662 ] - [ INFO ]  Client environment:host.name=host1
+2018-06-22 01:14:45  [ main:662 ] - [ INFO ]  Client environment:java.version=1.8.0_171
+2018-06-22 01:14:45  [ main:663 ] - [ INFO ]  Client environment:java.vendor=Oracle Corporation
+2018-06-22 01:14:45  [ main:663 ] - [ INFO ]  Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+2018-06-22 01:14:45  [ main:663 ] - [ INFO ]  Client environment:java.class.path=/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/icedtea-sound.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/java-atk-wrapper.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/management-agent.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar:/root/IdeaProjects/PerformanceTest/out/production/classes:/root/IdeaProjects/PerformanceTest/out/production/resources:/root/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.3.11/f6b34997d04c1538ce451d3955298f46fdb4dbd4/groovy-all-2.3.11.jar:/root/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.11.0/e6b751e02120c08702d98750f6a80bc25343b7f5/log4j-core-2.11.0.jar:/root/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.0/bede79a3f150711634a3047985517431bf6499f2/log4j-api-2.11.0.jar:/usr/local/hbase-1.1/lib/xz-1.0.jar:/usr/local/hbase-1.1/lib/asm-3.1.jar:/usr/local/hbase-1.1/lib/guice-3.0.jar:/usr/local/hbase-1.1/lib/avro-1.7.4.jar:/usr/local/hbase-1.1/lib/joni-2.1.2.jar:/usr/local/hbase-1.1/lib/junit-4.11.jar:/usr/local/hbase-1.1/lib/jsch-0.1.42.jar:/usr/local/hbase-1.1/lib/xmlenc-0.52.jar:/usr/local/hbase-1.1/lib/guava-12.0.1.jar:/usr/local/hbase-1.1/lib/jets3t-0.9.0.jar:/usr/local/hbase-1.1/lib/jetty-6.1.26.jar:/usr/local/hbase-1.1/lib/jsr305-1.3.9.jar:/usr/local/hbase-1.1/lib/log4j-1.2.17.jar:/usr/local/hbase-1.1/lib/paranamer-2.3.jar:/usr/local/hbase-1.1/lib/activation-1.1.jar:/usr/local/hbase-1.1/lib/commons-el-1.0.jar:/usr/local/hbase-1.1/lib/commons-io-2.4.jar:/usr/local/hbase-1.1/lib/hbase-it-1.1.2.jar:/usr/local/hbase-1.1/lib/httpcore-4.1.3.jar:/usr/local/hbase-1.1/lib/javax.inject-1.jar:/usr/local/hbase-1.1/lib/jaxb-api-2.2.2.jar:/usr/local/hbase-1.1/lib/jcodings-1.0.8.jar:/usr/local/hbase-1.1/lib/jettison-1.3.3.jar:/usr/local/hbase-1.1/lib/jsp-2.1-6.1.14.jar:/usr/local/hbase-1.1/lib/aopalliance-1.0.jar:/usr/local/hbase-1.1/lib/commons-cli-1.2.jar:/usr/local/hbase-1.1/lib/commons-net-3.1.jar:/usr/local/hbase-1.1/lib/disruptor-3.3.0.jar:/usr/local/hbase-1.1/lib/jersey-core-1.9.jar:/usr/local/hbase-1.1/lib/jersey-json-1.9.jar:/usr/local/hbase-1.1/lib/libthrift-0.9.0.jar:/usr/local/hbase-1.1/lib/servlet-api-2.5.jar:/usr/local/hbase-1.1/lib/slf4j-api-1.7.7.jar:/usr/local/hbase-1.1/lib/zookeeper-3.4.6.jar:/usr/local/hbase-1.1/lib/commons-lang-2.6.jar:/usr/local/hbase-1.1/lib/commons-math-2.2.jar:/usr/local/hbase-1.1/lib/hbase-rest-1.1.2.jar:/usr/local/hbase-1.1/lib/httpclient-4.2.5.jar:/usr/local/hbase-1.1/lib/jersey-guice-1.9.jar:/usr/local/hbase-1.1/lib/commons-codec-1.9.jar:/usr/local/hbase-1.1/lib/guice-servlet-3.0.jar:/usr/local/hbase-1.1/lib/hadoop-auth-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-hdfs-2.5.1.jar:/usr/local/hbase-1.1/lib/hbase-shell-1.1.2.jar:/usr/local/hbase-1.1/lib/jackson-xc-1.9.13.jar:/usr/local/hbase-1.1/lib/jaxb-impl-2.2.3-1.jar:/usr/local/hbase-1.1/lib/jersey-client-1.9.jar:/usr/local/hbase-1.1/lib/jersey-server-1.9.jar:/usr/local/hbase-1.1/lib/jetty-util-6.1.26.jar:/usr/local/hbase-1.1/lib/netty-3.2.4.Final.jar:/usr/local/hbase-1.1/lib/api-util-1.0.0-M20.jar:/usr/local/hbase-1.1/lib/hbase-client-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-common-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-server-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-thrift-1.1.2.jar:/usr/local/hbase-1.1/lib/jsp-api-2.1-6.1.14.jar:/usr/local/hbase-1.1/lib/leveldbjni-all-1.8.jar:/usr/local/hbase-1.1/lib/metrics-core-2.2.0.jar:/usr/local/hbase-1.1/lib/commons-logging-1.2.jar:/usr/local/hbase-1.1/lib/commons-math3-3.1.1.jar:/usr/local/hbase-1.1/lib/hadoop-client-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-common-2.5.1.jar:/usr/local/hbase-1.1/lib/jamon-runtime-2.3.1.jar:/usr/local/hbase-1.1/lib/java-xmlbuilder-0.4.jar:/usr/local/hbase-1.1/lib/protobuf-java-2.5.0.jar:/usr/local/hbase-1.1/lib/slf4j-log4j12-1.7.5.jar:/usr/local/hbase-1.1/lib/snappy-java-1.0.4.1.jar:/usr/local/hbase-1.1/lib/spymemcached-2.11.6.jar:/usr/local/hbase-1.1/lib/commons-digester-1.8.jar:/usr/local/hbase-1.1/lib/hbase-examples-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-it-1.1.2-tests.jar:/usr/local/hbase-1.1/lib/hbase-protocol-1.1.2.jar:/usr/local/hbase-1.1/lib/jackson-jaxrs-1.9.13.jar:/usr/local/hbase-1.1/lib/jruby-complete-1.6.8.jar:/usr/local/hbase-1.1/lib/commons-daemon-1.0.13.jar:/usr/local/hbase-1.1/lib/hadoop-yarn-api-2.5.1.jar:/usr/local/hbase-1.1/lib/hbase-procedure-1.1.2.jar:/usr/local/hbase-1.1/lib/jasper-runtime-5.5.23.jar:/usr/local/hbase-1.1/lib/api-asn1-api-1.0.0-M20.jar:/usr/local/hbase-1.1/lib/commons-compress-1.4.1.jar:/usr/local/hbase-1.1/lib/commons-httpclient-3.1.jar:/usr/local/hbase-1.1/lib/jasper-compiler-5.5.23.jar:/usr/local/hbase-1.1/lib/jetty-sslengine-6.1.26.jar:/usr/local/hbase-1.1/lib/netty-all-4.0.23.Final.jar:/usr/local/hbase-1.1/lib/servlet-api-2.5-6.1.14.jar:/usr/local/hbase-1.1/lib/apacheds-i18n-2.0.0-M15.jar:/usr/local/hbase-1.1/lib/commons-beanutils-1.7.0.jar:/usr/local/hbase-1.1/lib/hbase-annotations-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-prefix-tree-1.1.2.jar:/usr/local/hbase-1.1/lib/jackson-core-asl-1.9.13.jar:/usr/local/hbase-1.1/lib/hadoop-annotations-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-yarn-client-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-yarn-common-2.5.1.jar:/usr/local/hbase-1.1/lib/hbase-common-1.1.2-tests.jar:/usr/local/hbase-1.1/lib/hbase-server-1.1.2-tests.jar:/usr/local/hbase-1.1/lib/commons-collections-3.2.1.jar:/usr/local/hbase-1.1/lib/commons-configuration-1.6.jar:/usr/local/hbase-1.1/lib/hbase-hadoop-compat-1.1.2.jar:/usr/local/hbase-1.1/lib/jackson-mapper-asl-1.9.13.jar:/usr/local/hbase-1.1/lib/hbase-hadoop2-compat-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-resource-bundle-1.1.2.jar:/usr/local/hbase-1.1/lib/commons-beanutils-core-1.8.0.jar:/usr/local/hbase-1.1/lib/findbugs-annotations-1.3.9-1.jar:/usr/local/hbase-1.1/lib/htrace-core-3.1.0-incubating.jar:/usr/local/hbase-1.1/lib/hbase-annotations-1.1.2-tests.jar:/usr/local/hbase-1.1/lib/hadoop-yarn-server-common-2.5.1.jar:/usr/local/hbase-1.1/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-app-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-core-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-common-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-shuffle-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-jobclient-2.5.1.jar:/usr/local/idea/lib/idea_rt.jar
+2018-06-22 01:14:45  [ main:663 ] - [ INFO ]  Client environment:java.library.path=/usr/local/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2018-06-22 01:14:45  [ main:663 ] - [ INFO ]  Client environment:java.io.tmpdir=/tmp
+2018-06-22 01:14:45  [ main:663 ] - [ INFO ]  Client environment:java.compiler=<NA>
+2018-06-22 01:14:45  [ main:664 ] - [ INFO ]  Client environment:os.name=Linux
+2018-06-22 01:14:45  [ main:664 ] - [ INFO ]  Client environment:os.arch=amd64
+2018-06-22 01:14:45  [ main:664 ] - [ INFO ]  Client environment:os.version=4.15.0-23-generic
+2018-06-22 01:14:45  [ main:664 ] - [ INFO ]  Client environment:user.name=root
+2018-06-22 01:14:45  [ main:664 ] - [ INFO ]  Client environment:user.home=/root
+2018-06-22 01:14:45  [ main:664 ] - [ INFO ]  Client environment:user.dir=/root/IdeaProjects/PerformanceTest
+2018-06-22 01:14:45  [ main:665 ] - [ INFO ]  Initiating client connection, connectString=localhost:2181 sessionTimeout=180000 watcher=hconnection-0x57f235570x0, quorum=localhost:2181, baseZNode=/hbase
+2018-06-22 01:14:45  [ main:668 ] - [ DEBUG ]  zookeeper.disableAutoWatchReset is false
+2018-06-22 01:14:45  [ main-SendThread(localhost:2181):772 ] - [ INFO ]  Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-06-22 01:14:45  [ main-SendThread(localhost:2181):784 ] - [ INFO ]  Socket connection established to localhost/127.0.0.1:2181, initiating session
+2018-06-22 01:14:45  [ main-SendThread(localhost:2181):785 ] - [ DEBUG ]  Session establishment request sent on localhost/127.0.0.1:2181
+2018-06-22 01:14:45  [ main-SendThread(localhost:2181):798 ] - [ INFO ]  Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x164265e57630014, negotiated timeout = 90000
+2018-06-22 01:14:45  [ main-EventThread:810 ] - [ DEBUG ]  hconnection-0x57f235570x0, quorum=localhost:2181, baseZNode=/hbase Received ZooKeeper Event, type=None, state=SyncConnected, path=null
+2018-06-22 01:14:45  [ main-EventThread:812 ] - [ DEBUG ]  hconnection-0x57f23557-0x164265e57630014 connected
+2018-06-22 01:14:45  [ main-SendThread(localhost:2181):814 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630014, packet:: clientPath:null serverPath:null finished:false header:: 1,3  replyHeader:: 1,463,0  request:: '/hbase/hbaseid,F  response:: s{17,333,1529648298952,1529652077656,2,0,0,0,67,0,17} 
+2018-06-22 01:14:45  [ main-SendThread(localhost:2181):823 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630014, packet:: clientPath:null serverPath:null finished:false header:: 2,4  replyHeader:: 2,463,0  request:: '/hbase/hbaseid,F  response:: #ffffffff000146d61737465723a3136303030ffffffa36e5bffffff92ffffffc03b7cffffff8250425546a2461366133663831612d656636622d343234382d383864632d366465663236353532333566,s{17,333,1529648298952,1529652077656,2,0,0,0,67,0,17} 
+2018-06-22 01:14:45  [ main:1167 ] - [ DEBUG ]  Codec=org.apache.hadoop.hbase.codec.KeyValueCodec@3c130745, compressor=null, tcpKeepAlive=true, tcpNoDelay=true, connectTO=10000, readTO=20000, writeTO=60000, minIdleTimeBeforeClose=120000, maxRetries=0, fallbackAllowed=false, bind address=null
+2018-06-22 01:14:46  [ main-SendThread(localhost:2181):1309 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630014, packet:: clientPath:null serverPath:null finished:false header:: 3,8  replyHeader:: 3,463,0  request:: '/hbase,F  response:: v{'replication,'meta-region-server,'rs,'splitWAL,'backup-masters,'table-lock,'flush-table-proc,'region-in-transition,'online-snapshot,'master,'running,'recovering-regions,'draining,'namespace,'hbaseid,'table} 
+2018-06-22 01:14:46  [ main-SendThread(localhost:2181):1315 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630014, packet:: clientPath:null serverPath:null finished:false header:: 4,4  replyHeader:: 4,463,0  request:: '/hbase/meta-region-server,F  response:: #ffffffff0001a726567696f6e7365727665723a31363032335e76fffffffbffffffb0ffffffc03747150425546a11a5686f73743110ffffff977d18fffffff6ffffff85ffffff96ffffffb3ffffffc22c100183,s{399,399,1529652575432,1529652575432,0,0,0,0,58,0,399} 
+2018-06-22 01:14:46  [ hconnection-0x57f23557-metaLookup-shared--pool2-t1:1531 ] - [ DEBUG ]  Use SIMPLE authentication for service ClientService, sasl=false
+2018-06-22 01:14:46  [ hconnection-0x57f23557-metaLookup-shared--pool2-t1:1550 ] - [ DEBUG ]  Connecting to host1/192.168.137.129:16023
+2018-06-22 01:14:46  [ htable-pool1-t1:1641 ] - [ DEBUG ]  Use SIMPLE authentication for service ClientService, sasl=false
+2018-06-22 01:14:46  [ htable-pool1-t1:1642 ] - [ DEBUG ]  Connecting to host1/192.168.137.129:16020
+2018-06-22 01:14:46  [ htable-pool1-t1:1736 ] - [ WARN ]  #2, table=t1, attempt=1/31 failed=100ops, last exception: null on host1,16020,1529652589239, tracking started Fri Jun 22 01:14:46 PDT 2018; not retrying 100 - final failure
+2018-06-22 01:14:46  [ main:2025 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2025 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2026 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2026 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2026 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2026 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2026 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2027 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2027 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2027 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2027 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2031 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2032 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2032 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2032 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2032 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2032 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2032 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2032 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2035 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2035 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2035 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2035 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2036 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2036 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2036 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2036 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2037 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2037 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2038 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2038 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2038 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2038 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2039 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2039 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2039 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2039 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2039 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2040 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2040 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2040 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2041 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2041 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2042 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2043 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2043 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2043 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2043 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2043 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2044 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2045 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2045 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2045 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2045 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2045 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2045 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2045 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2045 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2048 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2049 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2049 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2049 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2049 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2049 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2049 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2050 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2050 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2050 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2050 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2050 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2050 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2051 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2051 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2051 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2051 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2051 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2051 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2052 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2052 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2052 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2052 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2053 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2053 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2053 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2054 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2054 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2054 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2054 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2054 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2054 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2055 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2055 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2055 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2055 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2055 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2055 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2055 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2055 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2056 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2056 ] - [ INFO ]  Failed to sent put {"totalColumns":1,"row":"someRow","families":{"f":[{"qualifier":"someQualifier","vlen":10,"tag":[],"timestamp":9223372036854775807}]}}.
+2018-06-22 01:14:46  [ main:2056 ] - [ INFO ]  Closing zookeeper sessionid=0x164265e57630014
+2018-06-22 01:14:46  [ main:2057 ] - [ DEBUG ]  Closing session: 0x164265e57630014
+2018-06-22 01:14:46  [ main:2057 ] - [ DEBUG ]  Closing client for session: 0x164265e57630014
+2018-06-22 01:14:46  [ main-SendThread(localhost:2181):2059 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630014, packet:: clientPath:null serverPath:null finished:false header:: 5,-11  replyHeader:: 5,464,0  request:: null response:: null
+2018-06-22 01:14:46  [ main:2059 ] - [ DEBUG ]  Disconnecting client for session: 0x164265e57630014
+2018-06-22 01:14:46  [ main:2060 ] - [ INFO ]  Session: 0x164265e57630014 closed
+2018-06-22 01:14:46  [ main:2060 ] - [ DEBUG ]  Stopping rpc client
+2018-06-22 01:14:46  [ main-SendThread(localhost:2181):2059 ] - [ DEBUG ]  An exception was thrown while closing send thread for session 0x164265e57630014 : Unable to read additional data from server sessionid 0x164265e57630014, likely server has closed socket
+2018-06-22 01:14:46  [ main-EventThread:2060 ] - [ INFO ]  EventThread shut down
+2018-06-22 01:19:45  [ main:0 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[Rate of successful kerberos logins and latency (milliseconds)])
+2018-06-22 01:19:45  [ main:13 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[Rate of failed kerberos logins and latency (milliseconds)])
+2018-06-22 01:19:45  [ main:13 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, valueName=Time, value=[GetGroups])
+2018-06-22 01:19:45  [ main:14 ] - [ DEBUG ]  UgiMetrics, User and group related metrics
+2018-06-22 01:19:45  [ main:85 ] - [ DEBUG ]  Kerberos krb5 configuration not found, setting default realm to empty
+2018-06-22 01:19:45  [ main:87 ] - [ DEBUG ]   Creating new Groups object
+2018-06-22 01:19:45  [ main:89 ] - [ DEBUG ]  Trying to load the custom-built native-hadoop library...
+2018-06-22 01:19:45  [ main:90 ] - [ DEBUG ]  Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+2018-06-22 01:19:45  [ main:90 ] - [ DEBUG ]  java.library.path=/usr/local/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2018-06-22 01:19:45  [ main:90 ] - [ WARN ]  Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-06-22 01:19:45  [ main:90 ] - [ DEBUG ]  Falling back to shell based
+2018-06-22 01:19:45  [ main:91 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+2018-06-22 01:19:45  [ main:161 ] - [ DEBUG ]  setsid exited with exit code 0
+2018-06-22 01:19:45  [ main:161 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+2018-06-22 01:19:45  [ main:164 ] - [ DEBUG ]  hadoop login
+2018-06-22 01:19:45  [ main:165 ] - [ DEBUG ]  hadoop login commit
+2018-06-22 01:19:45  [ main:168 ] - [ DEBUG ]  using local user:UnixPrincipal: root
+2018-06-22 01:19:45  [ main:169 ] - [ DEBUG ]  UGI loginUser:root (auth:SIMPLE)
+2018-06-22 01:19:45  [ main:337 ] - [ INFO ]  Process identifier=hconnection-0x3b94d659 connecting to ZooKeeper ensemble=localhost:2181
+2018-06-22 01:19:45  [ main:343 ] - [ INFO ]  Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2018-06-22 01:19:45  [ main:343 ] - [ INFO ]  Client environment:host.name=host1
+2018-06-22 01:19:45  [ main:344 ] - [ INFO ]  Client environment:java.version=1.8.0_171
+2018-06-22 01:19:45  [ main:344 ] - [ INFO ]  Client environment:java.vendor=Oracle Corporation
+2018-06-22 01:19:45  [ main:344 ] - [ INFO ]  Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+2018-06-22 01:19:45  [ main:344 ] - [ INFO ]  Client environment:java.class.path=/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/icedtea-sound.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/java-atk-wrapper.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/management-agent.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar:/root/IdeaProjects/PerformanceTest/out/production/classes:/root/IdeaProjects/PerformanceTest/out/production/resources:/root/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.3.11/f6b34997d04c1538ce451d3955298f46fdb4dbd4/groovy-all-2.3.11.jar:/root/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.11.0/e6b751e02120c08702d98750f6a80bc25343b7f5/log4j-core-2.11.0.jar:/root/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.0/bede79a3f150711634a3047985517431bf6499f2/log4j-api-2.11.0.jar:/usr/local/hbase-1.1/lib/xz-1.0.jar:/usr/local/hbase-1.1/lib/asm-3.1.jar:/usr/local/hbase-1.1/lib/guice-3.0.jar:/usr/local/hbase-1.1/lib/avro-1.7.4.jar:/usr/local/hbase-1.1/lib/joni-2.1.2.jar:/usr/local/hbase-1.1/lib/junit-4.11.jar:/usr/local/hbase-1.1/lib/jsch-0.1.42.jar:/usr/local/hbase-1.1/lib/xmlenc-0.52.jar:/usr/local/hbase-1.1/lib/guava-12.0.1.jar:/usr/local/hbase-1.1/lib/jets3t-0.9.0.jar:/usr/local/hbase-1.1/lib/jetty-6.1.26.jar:/usr/local/hbase-1.1/lib/jsr305-1.3.9.jar:/usr/local/hbase-1.1/lib/log4j-1.2.17.jar:/usr/local/hbase-1.1/lib/paranamer-2.3.jar:/usr/local/hbase-1.1/lib/activation-1.1.jar:/usr/local/hbase-1.1/lib/commons-el-1.0.jar:/usr/local/hbase-1.1/lib/commons-io-2.4.jar:/usr/local/hbase-1.1/lib/hbase-it-1.1.2.jar:/usr/local/hbase-1.1/lib/httpcore-4.1.3.jar:/usr/local/hbase-1.1/lib/javax.inject-1.jar:/usr/local/hbase-1.1/lib/jaxb-api-2.2.2.jar:/usr/local/hbase-1.1/lib/jcodings-1.0.8.jar:/usr/local/hbase-1.1/lib/jettison-1.3.3.jar:/usr/local/hbase-1.1/lib/jsp-2.1-6.1.14.jar:/usr/local/hbase-1.1/lib/aopalliance-1.0.jar:/usr/local/hbase-1.1/lib/commons-cli-1.2.jar:/usr/local/hbase-1.1/lib/commons-net-3.1.jar:/usr/local/hbase-1.1/lib/disruptor-3.3.0.jar:/usr/local/hbase-1.1/lib/jersey-core-1.9.jar:/usr/local/hbase-1.1/lib/jersey-json-1.9.jar:/usr/local/hbase-1.1/lib/libthrift-0.9.0.jar:/usr/local/hbase-1.1/lib/servlet-api-2.5.jar:/usr/local/hbase-1.1/lib/slf4j-api-1.7.7.jar:/usr/local/hbase-1.1/lib/zookeeper-3.4.6.jar:/usr/local/hbase-1.1/lib/commons-lang-2.6.jar:/usr/local/hbase-1.1/lib/commons-math-2.2.jar:/usr/local/hbase-1.1/lib/hbase-rest-1.1.2.jar:/usr/local/hbase-1.1/lib/httpclient-4.2.5.jar:/usr/local/hbase-1.1/lib/jersey-guice-1.9.jar:/usr/local/hbase-1.1/lib/commons-codec-1.9.jar:/usr/local/hbase-1.1/lib/guice-servlet-3.0.jar:/usr/local/hbase-1.1/lib/hadoop-auth-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-hdfs-2.5.1.jar:/usr/local/hbase-1.1/lib/hbase-shell-1.1.2.jar:/usr/local/hbase-1.1/lib/jackson-xc-1.9.13.jar:/usr/local/hbase-1.1/lib/jaxb-impl-2.2.3-1.jar:/usr/local/hbase-1.1/lib/jersey-client-1.9.jar:/usr/local/hbase-1.1/lib/jersey-server-1.9.jar:/usr/local/hbase-1.1/lib/jetty-util-6.1.26.jar:/usr/local/hbase-1.1/lib/netty-3.2.4.Final.jar:/usr/local/hbase-1.1/lib/api-util-1.0.0-M20.jar:/usr/local/hbase-1.1/lib/hbase-client-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-common-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-server-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-thrift-1.1.2.jar:/usr/local/hbase-1.1/lib/jsp-api-2.1-6.1.14.jar:/usr/local/hbase-1.1/lib/leveldbjni-all-1.8.jar:/usr/local/hbase-1.1/lib/metrics-core-2.2.0.jar:/usr/local/hbase-1.1/lib/commons-logging-1.2.jar:/usr/local/hbase-1.1/lib/commons-math3-3.1.1.jar:/usr/local/hbase-1.1/lib/hadoop-client-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-common-2.5.1.jar:/usr/local/hbase-1.1/lib/jamon-runtime-2.3.1.jar:/usr/local/hbase-1.1/lib/java-xmlbuilder-0.4.jar:/usr/local/hbase-1.1/lib/protobuf-java-2.5.0.jar:/usr/local/hbase-1.1/lib/slf4j-log4j12-1.7.5.jar:/usr/local/hbase-1.1/lib/snappy-java-1.0.4.1.jar:/usr/local/hbase-1.1/lib/spymemcached-2.11.6.jar:/usr/local/hbase-1.1/lib/commons-digester-1.8.jar:/usr/local/hbase-1.1/lib/hbase-examples-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-it-1.1.2-tests.jar:/usr/local/hbase-1.1/lib/hbase-protocol-1.1.2.jar:/usr/local/hbase-1.1/lib/jackson-jaxrs-1.9.13.jar:/usr/local/hbase-1.1/lib/jruby-complete-1.6.8.jar:/usr/local/hbase-1.1/lib/commons-daemon-1.0.13.jar:/usr/local/hbase-1.1/lib/hadoop-yarn-api-2.5.1.jar:/usr/local/hbase-1.1/lib/hbase-procedure-1.1.2.jar:/usr/local/hbase-1.1/lib/jasper-runtime-5.5.23.jar:/usr/local/hbase-1.1/lib/api-asn1-api-1.0.0-M20.jar:/usr/local/hbase-1.1/lib/commons-compress-1.4.1.jar:/usr/local/hbase-1.1/lib/commons-httpclient-3.1.jar:/usr/local/hbase-1.1/lib/jasper-compiler-5.5.23.jar:/usr/local/hbase-1.1/lib/jetty-sslengine-6.1.26.jar:/usr/local/hbase-1.1/lib/netty-all-4.0.23.Final.jar:/usr/local/hbase-1.1/lib/servlet-api-2.5-6.1.14.jar:/usr/local/hbase-1.1/lib/apacheds-i18n-2.0.0-M15.jar:/usr/local/hbase-1.1/lib/commons-beanutils-1.7.0.jar:/usr/local/hbase-1.1/lib/hbase-annotations-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-prefix-tree-1.1.2.jar:/usr/local/hbase-1.1/lib/jackson-core-asl-1.9.13.jar:/usr/local/hbase-1.1/lib/hadoop-annotations-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-yarn-client-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-yarn-common-2.5.1.jar:/usr/local/hbase-1.1/lib/hbase-common-1.1.2-tests.jar:/usr/local/hbase-1.1/lib/hbase-server-1.1.2-tests.jar:/usr/local/hbase-1.1/lib/commons-collections-3.2.1.jar:/usr/local/hbase-1.1/lib/commons-configuration-1.6.jar:/usr/local/hbase-1.1/lib/hbase-hadoop-compat-1.1.2.jar:/usr/local/hbase-1.1/lib/jackson-mapper-asl-1.9.13.jar:/usr/local/hbase-1.1/lib/hbase-hadoop2-compat-1.1.2.jar:/usr/local/hbase-1.1/lib/hbase-resource-bundle-1.1.2.jar:/usr/local/hbase-1.1/lib/commons-beanutils-core-1.8.0.jar:/usr/local/hbase-1.1/lib/findbugs-annotations-1.3.9-1.jar:/usr/local/hbase-1.1/lib/htrace-core-3.1.0-incubating.jar:/usr/local/hbase-1.1/lib/hbase-annotations-1.1.2-tests.jar:/usr/local/hbase-1.1/lib/hadoop-yarn-server-common-2.5.1.jar:/usr/local/hbase-1.1/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-app-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-core-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-common-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-shuffle-2.5.1.jar:/usr/local/hbase-1.1/lib/hadoop-mapreduce-client-jobclient-2.5.1.jar:/usr/local/idea/lib/idea_rt.jar
+2018-06-22 01:19:45  [ main:345 ] - [ INFO ]  Client environment:java.library.path=/usr/local/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2018-06-22 01:19:45  [ main:345 ] - [ INFO ]  Client environment:java.io.tmpdir=/tmp
+2018-06-22 01:19:45  [ main:345 ] - [ INFO ]  Client environment:java.compiler=<NA>
+2018-06-22 01:19:45  [ main:345 ] - [ INFO ]  Client environment:os.name=Linux
+2018-06-22 01:19:45  [ main:345 ] - [ INFO ]  Client environment:os.arch=amd64
+2018-06-22 01:19:45  [ main:345 ] - [ INFO ]  Client environment:os.version=4.15.0-23-generic
+2018-06-22 01:19:45  [ main:345 ] - [ INFO ]  Client environment:user.name=root
+2018-06-22 01:19:45  [ main:345 ] - [ INFO ]  Client environment:user.home=/root
+2018-06-22 01:19:45  [ main:346 ] - [ INFO ]  Client environment:user.dir=/root/IdeaProjects/PerformanceTest
+2018-06-22 01:19:45  [ main:346 ] - [ INFO ]  Initiating client connection, connectString=localhost:2181 sessionTimeout=90000 watcher=hconnection-0x3b94d6590x0, quorum=localhost:2181, baseZNode=/hbase
+2018-06-22 01:19:45  [ main:349 ] - [ DEBUG ]  zookeeper.disableAutoWatchReset is false
+2018-06-22 01:19:45  [ main-SendThread(localhost:2181):367 ] - [ INFO ]  Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-06-22 01:19:46  [ main-SendThread(localhost:2181):373 ] - [ INFO ]  Socket connection established to localhost/127.0.0.1:2181, initiating session
+2018-06-22 01:19:46  [ main-SendThread(localhost:2181):374 ] - [ DEBUG ]  Session establishment request sent on localhost/127.0.0.1:2181
+2018-06-22 01:19:46  [ main-SendThread(localhost:2181):379 ] - [ INFO ]  Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x164265e57630015, negotiated timeout = 90000
+2018-06-22 01:19:46  [ main-EventThread:388 ] - [ DEBUG ]  hconnection-0x3b94d6590x0, quorum=localhost:2181, baseZNode=/hbase Received ZooKeeper Event, type=None, state=SyncConnected, path=null
+2018-06-22 01:19:46  [ main-EventThread:391 ] - [ DEBUG ]  hconnection-0x3b94d659-0x164265e57630015 connected
+2018-06-22 01:19:46  [ main-SendThread(localhost:2181):396 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630015, packet:: clientPath:null serverPath:null finished:false header:: 1,3  replyHeader:: 1,530,0  request:: '/hbase/hbaseid,F  response:: s{17,333,1529648298952,1529652077656,2,0,0,0,67,0,17} 
+2018-06-22 01:19:46  [ main-SendThread(localhost:2181):410 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630015, packet:: clientPath:null serverPath:null finished:false header:: 2,4  replyHeader:: 2,530,0  request:: '/hbase/hbaseid,F  response:: #ffffffff000146d61737465723a3136303030ffffffa36e5bffffff92ffffffc03b7cffffff8250425546a2461366133663831612d656636622d343234382d383864632d366465663236353532333566,s{17,333,1529648298952,1529652077656,2,0,0,0,67,0,17} 
+2018-06-22 01:19:46  [ main:707 ] - [ DEBUG ]  Codec=org.apache.hadoop.hbase.codec.KeyValueCodec@1b1473ab, compressor=null, tcpKeepAlive=true, tcpNoDelay=true, connectTO=10000, readTO=20000, writeTO=60000, minIdleTimeBeforeClose=120000, maxRetries=0, fallbackAllowed=false, bind address=null
+2018-06-22 01:19:46  [ main-SendThread(localhost:2181):809 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630015, packet:: clientPath:null serverPath:null finished:false header:: 3,8  replyHeader:: 3,530,0  request:: '/hbase,F  response:: v{'replication,'meta-region-server,'rs,'splitWAL,'backup-masters,'table-lock,'flush-table-proc,'region-in-transition,'online-snapshot,'master,'running,'recovering-regions,'draining,'namespace,'hbaseid,'table} 
+2018-06-22 01:19:46  [ main-SendThread(localhost:2181):812 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630015, packet:: clientPath:null serverPath:null finished:false header:: 4,4  replyHeader:: 4,530,0  request:: '/hbase/meta-region-server,F  response:: #ffffffff0001a726567696f6e7365727665723a31363032335e76fffffffbffffffb0ffffffc03747150425546a11a5686f73743110ffffff977d18fffffff6ffffff85ffffff96ffffffb3ffffffc22c100183,s{399,399,1529652575432,1529652575432,0,0,0,0,58,0,399} 
+2018-06-22 01:19:46  [ hconnection-0x3b94d659-metaLookup-shared--pool2-t1:985 ] - [ DEBUG ]  Use SIMPLE authentication for service ClientService, sasl=false
+2018-06-22 01:19:46  [ hconnection-0x3b94d659-metaLookup-shared--pool2-t1:1003 ] - [ DEBUG ]  Connecting to host1/192.168.137.129:16023
+2018-06-22 01:19:46  [ hconnection-0x3b94d659-shared--pool1-t2:1144 ] - [ DEBUG ]  Use SIMPLE authentication for service ClientService, sasl=false
+2018-06-22 01:19:46  [ hconnection-0x3b94d659-shared--pool1-t2:1145 ] - [ DEBUG ]  Connecting to host1/192.168.137.129:16022
+2018-06-22 01:19:46  [ hconnection-0x3b94d659-shared--pool1-t1:1154 ] - [ DEBUG ]  Use SIMPLE authentication for service ClientService, sasl=false
+2018-06-22 01:19:46  [ hconnection-0x3b94d659-shared--pool1-t1:1154 ] - [ DEBUG ]  Connecting to host1/192.168.137.129:16020
+2018-06-22 01:19:48  [ main:2525 ] - [ INFO ]  Closing zookeeper sessionid=0x164265e57630015
+2018-06-22 01:19:48  [ main:2525 ] - [ DEBUG ]  Closing session: 0x164265e57630015
+2018-06-22 01:19:48  [ main:2526 ] - [ DEBUG ]  Closing client for session: 0x164265e57630015
+2018-06-22 01:19:48  [ main-SendThread(localhost:2181):2528 ] - [ DEBUG ]  Reading reply sessionid:0x164265e57630015, packet:: clientPath:null serverPath:null finished:false header:: 5,-11  replyHeader:: 5,531,0  request:: null response:: null
+2018-06-22 01:19:48  [ main-SendThread(localhost:2181):2529 ] - [ DEBUG ]  An exception was thrown while closing send thread for session 0x164265e57630015 : Unable to read additional data from server sessionid 0x164265e57630015, likely server has closed socket
+2018-06-22 01:19:48  [ main:2531 ] - [ DEBUG ]  Disconnecting client for session: 0x164265e57630015
+2018-06-22 01:19:48  [ main:2531 ] - [ INFO ]  Session: 0x164265e57630015 closed
+2018-06-22 01:19:48  [ main-EventThread:2531 ] - [ INFO ]  EventThread shut down
+2018-06-22 01:19:48  [ main:2531 ] - [ DEBUG ]  Stopping rpc client

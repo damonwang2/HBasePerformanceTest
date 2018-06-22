@@ -18,16 +18,8 @@ public class PutData {
 
         try(Connection connection = ConnectionFactoryMy.createConnection()){
 
-            for(int i = 0; i < Constants.TABLE_NUM; i++){
+            putHbaseMultiVersion(connection, Constants.TABLE_T1, 5, 0, Constants.ID_NUM / 100);
 
-                //自定义多版本
-                putCustomMultiVersion(connection, Constants.TABLE_SCANS[i], i+1, 0, Constants.ID_NUM);
-
-                //hbase多版本
-                putHbaseMultiVersion(connection, Constants.TABLE_GETS[i], i+1, 0, Constants.ID_NUM);
-
-                System.out.println("put table" + (i+1) + "pairs");
-            }
         }catch (Exception e){
             e.printStackTrace();
         }

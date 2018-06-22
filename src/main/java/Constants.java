@@ -1,7 +1,6 @@
 public class Constants {
 
-    public static final String TABLE_8BYTES = "1234";
-    public static final String TABLE_16BYTES = "12345678";
+    public static final String TABLE_T1 = "t2";
 
     public static final int TABLE_NUM = 20;
 

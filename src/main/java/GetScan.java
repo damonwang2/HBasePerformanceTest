@@ -68,14 +68,6 @@ public class GetScan{
                 byte[] stopRow = Utils.getNextRowKeyOf16(id).getBytes();
 
                 Scan scan = new Scan();
-                scan.withStartRow(startRow);
-                scan.withStopRow(stopRow);
-                scan.readAllVersions();
-
-                if(limitOne){
-                    scan.setOneRowLimit();
-                }
-
                 if(withWrite){
                     PutData.putCustomMultiVersion(connection, tableNameStr, Constants.VALUE_NUM, Constants.ID_NUM, 4);
                 }
@@ -145,10 +137,6 @@ public class GetScan{
                 byte[] rowkey = Utils.getRowKeyOf16(id).getBytes();
 
                 Get get = new Get(rowkey);
-                //默认get一行,如果limitOne=false，则读取所有的版本
-                if(!limitOne){
-                    get.readAllVersions();
-                }
 
                 if(withWrite){
                     PutData.putCustomMultiVersion(connection, tableNameStr, Constants.VALUE_NUM, Constants.ID_NUM, 4);
